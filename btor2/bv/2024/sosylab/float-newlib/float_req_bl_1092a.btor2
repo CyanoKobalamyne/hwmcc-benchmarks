@@ -1,0 +1,278 @@
+1 sort bitvec 32
+2 sort bitvec 1
+3 sort bitvec 1
+4 sort bitvec 31
+5 sort bitvec 23
+6 sort bitvec 8
+7 sort bitvec 64
+8 constd 2 0
+9 constd 2 1
+10 input 1 !{$(in_main#0)<$(in_ceil_float#0)<i>>}
+11 input 1 !{$(in_main#0)<$(in_ceil_float#0)<$tmp>>}
+12 input 1 !{$(in_main#0)<$(in_ceil_float#0)<sf_u->word>>}
+13 input 1 (`fpasbv__8_23_32`_!{$(in_main#0)<$(in_ceil_float#0)<sf_u->value>>})
+14 input 1 !{$(in_main#0)<$(in_ceil_float#0)<h#<gf_u->word>>>}
+15 input 1 (`fpasbv__8_23_32`_!{$(in_main#0)<$(in_ceil_float#0)<h#<sf_u->value>>>})
+16 input 1 !{$(in_main#0)<$(in___signbit_float#1)<h#<gf_u->word>>>}
+17 input 1 %{$(in_main#0)<$(in_ceil_float#0)<i0>>}#4
+18 input 1 %{$(in_main#0)<$(in_ceil_float#0)<$tmp>>}#3
+19 input 1 %{$(in_main#0)<$(in_ceil_float#0)<i>>}#3
+20 input 1 %{$(in_main#0)<$(in_ceil_float#0)<i0>>}#6
+21 input 1 (`fpasbv__8_23_32`_%{$(in_main#0)<$(in_ceil_float#0)<x>>}#3)
+22 input 1 %{$(in_main#0)<$(in_ceil_float#0)<sf_u->word>>}#3
+23 input 1 (`fpasbv__8_23_32`_%{$(in_main#0)<$(in_ceil_float#0)<sf_u->value>>}#3)
+24 input 1 (`fpasbv__8_23_32`_%{$(in_main#0)<$(in_ceil_float#0)<ceil_float.return>>}#3)
+25 input 1 (`fpasbv__8_23_32`_!{huge_ceil}.next)
+26 input 2 !pc[0].next
+27 input 2 !pc[1].next
+28 state 1 (`fpasbv__8_23_32`_!{huge_ceil})
+29 state 2 !pc[0]
+30 state 2 !pc[1]
+31 state 2 reset0
+32 state 2 valid
+33 constd 1 2147483648
+34 eq 2 24 33
+35 constd 3 1
+36 constd 4 0
+37 slice 4 24 30 0
+38 eq 3 37 36
+39 eq 2 38 35
+40 or 2 39 34
+41 constd 5 0
+42 slice 5 24 22 0
+43 eq 3 42 41
+44 not 3 43
+45 constd 6 255
+46 slice 6 24 30 23
+47 eq 3 46 45
+48 and 3 47 44
+49 eq 2 48 35
+50 not 2 49
+51 and 2 50 40
+52 constd 1 1
+53 constd 1 0
+54 constd 7 0
+55 uext 7 16 32
+56 constd 7 2147483648
+57 and 7 56 55
+58 eq 2 57 54
+59 not 2 58
+60 ite 1 59 52 53
+61 eq 2 60 52
+62 and 2 61 51
+63 not 2 62
+64 constd 1 1900671690
+65 eq 2 25 64
+66 and 2 65 63
+67 eq 2 21 33
+68 constd 1 23
+69 srl 1 14 68
+70 constd 1 255
+71 and 1 70 69
+72 constd 1 4294967169
+73 add 1 72 71
+74 constd 1 8388607
+75 sra 1 74 73
+76 and 1 14 75
+77 eq 2 76 53
+78 slice 3 73 31 31
+79 eq 2 78 35
+80 not 2 79
+81 and 2 80 77
+82 and 2 81 67
+83 eq 2 75 19
+84 and 2 83 82
+85 eq 2 14 20
+86 and 2 85 84
+87 eq 2 11 18
+88 and 2 87 86
+89 eq 2 12 22
+90 and 2 89 88
+91 eq 2 13 23
+92 and 2 91 90
+93 and 2 34 92
+94 eq 2 15 21
+95 eq 2 20 15
+96 eq 2 17 20
+97 eq 2 10 19
+98 eq 2 17 33
+99 slice 3 14 31 31
+100 eq 2 99 35
+101 and 2 100 98
+102 constd 1 1065353216
+103 eq 2 17 102
+104 constd 1 2147483647
+105 and 1 104 14
+106 eq 2 105 53
+107 not 2 106
+108 and 2 107 103
+109 eq 2 14 17
+110 and 2 106 109
+111 or 2 110 108
+112 not 2 100
+113 and 2 112 111
+114 or 2 113 101
+115 and 2 79 114
+116 and 2 115 97
+117 and 2 116 96
+118 and 2 87 117
+119 not 1 75
+120 and 1 17 119
+121 eq 2 120 20
+122 constd 1 8388608
+123 sra 1 122 73
+124 add 1 14 123
+125 eq 2 124 18
+126 eq 2 17 124
+127 slt 2 53 14
+128 and 2 127 126
+129 and 2 128 125
+130 not 2 127
+131 and 2 109 130
+132 and 2 131 87
+133 or 2 132 129
+134 not 2 77
+135 and 2 134 133
+136 and 2 80 135
+137 and 2 136 83
+138 and 2 137 121
+139 or 2 138 118
+140 and 2 139 95
+141 and 2 140 94
+142 eq 2 20 22
+143 and 2 142 141
+144 eq 2 15 23
+145 and 2 144 143
+146 eq 2 15 24
+147 and 2 146 145
+148 or 2 147 93
+149 slt 2 73 68
+150 and 2 149 148
+151 constd 1 2139095040
+152 ult 2 105 151
+153 not 2 152
+154 not 2 149
+155 and 2 154 153
+156 and 2 155 67
+157 and 2 97 156
+158 and 2 85 157
+159 and 2 87 158
+160 and 2 89 159
+161 and 2 91 160
+162 and 2 34 161
+163 or 2 162 150
+164 and 2 154 152
+165 and 2 164 67
+166 and 2 97 165
+167 and 2 85 166
+168 and 2 87 167
+169 and 2 89 168
+170 and 2 169 91
+171 and 2 34 170
+172 or 2 171 163
+173 eq 2 16 24
+174 and 2 173 172
+175 and 2 174 66
+176 eq 2 14 33
+177 and 2 176 175
+178 not 2 27
+179 and 2 26 178
+180 not 2 30
+181 not 2 29
+182 and 2 181 180
+183 and 2 182 179
+184 and 2 183 177
+185 and 2 65 62
+186 and 2 185 174
+187 and 2 176 186
+188 not 2 26
+189 and 2 27 188
+190 and 2 182 189
+191 and 2 190 187
+192 or 2 191 184
+193 eq 2 28 25
+194 and 2 29 180
+195 and 2 189 194
+196 and 2 195 193
+197 or 2 196 192
+198 and 2 32 197
+199 not 2 31
+200 or 2 199 198
+201 and 2 178 188
+202 or 2 31 201
+203 and 2 202 200
+204 constd 1 4286578689
+205 eq 2 13 204
+206 constd 3 0
+207 slice 5 13 22 0
+208 eq 3 207 41
+209 not 3 208
+210 slice 6 13 30 23
+211 eq 3 210 45
+212 and 3 211 209
+213 eq 2 212 206
+214 or 2 213 205
+215 and 2 214 203
+216 eq 2 15 204
+217 slice 5 15 22 0
+218 eq 3 217 41
+219 not 3 218
+220 slice 6 15 30 23
+221 eq 3 220 45
+222 and 3 221 219
+223 eq 2 222 206
+224 or 2 223 216
+225 and 2 224 215
+226 eq 2 21 204
+227 slice 5 21 22 0
+228 eq 3 227 41
+229 not 3 228
+230 slice 6 21 30 23
+231 eq 3 230 45
+232 and 3 231 229
+233 eq 2 232 206
+234 or 2 233 226
+235 and 2 234 225
+236 eq 2 23 204
+237 slice 5 23 22 0
+238 eq 3 237 41
+239 not 3 238
+240 slice 6 23 30 23
+241 eq 3 240 45
+242 and 3 241 239
+243 eq 2 242 206
+244 or 2 243 236
+245 and 2 244 235
+246 eq 2 24 204
+247 eq 2 48 206
+248 or 2 247 246
+249 and 2 248 245
+250 eq 2 28 204
+251 slice 5 28 22 0
+252 eq 3 251 41
+253 not 3 252
+254 slice 6 28 30 23
+255 eq 3 254 45
+256 and 3 255 253
+257 eq 2 256 206
+258 or 2 257 250
+259 and 2 258 249
+260 eq 2 25 204
+261 slice 5 25 22 0
+262 eq 3 261 41
+263 not 3 262
+264 slice 6 25 30 23
+265 eq 3 264 45
+266 and 3 265 263
+267 eq 2 266 206
+268 or 2 267 260
+269 and 2 268 259
+270 and 2 194 32
+271 next 1 28 25
+272 next 2 29 26
+273 next 2 30 27
+274 init 2 31 8
+275 next 2 31 9
+276 init 2 32 8
+277 next 2 32 269
+278 bad 270
