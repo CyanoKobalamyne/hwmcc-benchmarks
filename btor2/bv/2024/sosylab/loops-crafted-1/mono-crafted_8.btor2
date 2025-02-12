@@ -1,0 +1,109 @@
+1 sort bitvec 32
+2 sort bitvec 1
+3 constd 2 0
+4 constd 2 1
+5 input 1 %{$(in_main#0)<z>}#2
+6 input 1 !{$(in_main#0)<x>}.next
+7 input 1 !{$(in_main#0)<y>}.next
+8 input 1 !{$(in_main#0)<z>}.next
+9 input 2 !pc[0].next
+10 input 2 !pc[1].next
+11 input 2 !pc[2].next
+12 state 1 !{$(in_main#0)<x>}
+13 state 1 !{$(in_main#0)<y>}
+14 state 1 !{$(in_main#0)<z>}
+15 state 2 !pc[0]
+16 state 2 !pc[1]
+17 state 2 !pc[2]
+18 state 2 reset0
+19 state 2 valid
+20 not 2 18
+21 not 2 16
+22 and 2 15 21
+23 not 2 17
+24 and 2 23 22
+25 and 2 9 10
+26 not 2 11
+27 and 2 26 25
+28 and 2 27 24
+29 constd 1 0
+30 constd 1 1
+31 eq 2 14 29
+32 ite 1 31 30 29
+33 eq 2 32 29
+34 not 2 33
+35 eq 2 14 8
+36 eq 2 13 7
+37 eq 2 12 6
+38 and 2 37 36
+39 and 2 38 35
+40 and 2 39 34
+41 ult 2 12 13
+42 not 2 41
+43 and 2 42 40
+44 and 2 43 28
+45 not 2 9
+46 and 2 10 45
+47 and 2 26 46
+48 and 2 24 47
+49 and 2 37 33
+50 and 2 36 49
+51 and 2 35 50
+52 and 2 42 51
+53 and 2 52 48
+54 not 2 10
+55 and 2 9 54
+56 and 2 55 26
+57 and 2 56 24
+58 eq 2 8 5
+59 add 1 30 12
+60 eq 2 6 59
+61 and 2 36 60
+62 and 2 61 58
+63 constd 1 4294967295
+64 add 1 63 14
+65 eq 2 64 5
+66 constd 1 5000000
+67 ult 2 12 66
+68 not 2 67
+69 and 2 68 65
+70 eq 2 14 5
+71 and 2 67 70
+72 or 2 71 69
+73 and 2 72 62
+74 and 2 41 73
+75 and 2 74 57
+76 or 2 75 53
+77 or 2 76 44
+78 not 2 15
+79 and 2 78 21
+80 and 2 79 23
+81 and 2 80 56
+82 eq 2 8 66
+83 constd 1 10000000
+84 eq 2 7 83
+85 eq 2 6 29
+86 and 2 85 84
+87 and 2 86 82
+88 and 2 87 81
+89 or 2 88 77
+90 and 2 89 19
+91 or 2 90 20
+92 and 2 54 45
+93 and 2 26 92
+94 or 2 18 93
+95 and 2 94 91
+96 and 2 16 78
+97 and 2 23 96
+98 and 2 97 19
+99 next 1 12 6
+100 next 1 13 7
+101 next 1 14 8
+102 next 2 15 9
+103 next 2 16 10
+104 next 2 17 11
+105 init 2 18 3
+106 next 2 18 4
+107 init 2 19 3
+108 next 2 19 95
+109 bad 98
