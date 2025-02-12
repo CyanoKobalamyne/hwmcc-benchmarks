@@ -1,0 +1,240 @@
+1 sort bitvec 32
+2 sort bitvec 64
+3 sort array 1 2
+4 sort bitvec 1
+5 constd 4 0
+6 constd 4 1
+7 input 1 !{$(in_main#0)<$(in___VERIFIER_nondet_int#0)<h#<__VERIFIER_nondet_int.return>>>}
+8 input 1 %{$(in_main#0)<a>}#1
+9 input 1 %{$(in_main#0)<b>}#1
+10 input 1 %{$(in_main#0)<c>}#1
+11 input 1 %{$(in_main#0)<i>}#1
+12 input 1 !{$(in_main#0)<a>}.next
+13 input 1 !{$(in_main#0)<b>}.next
+14 input 1 !{$(in_main#0)<c>}.next
+15 input 1 !{$(in_main#0)<i>}.next
+16 input 1 !{%memaddr}.next
+17 input 1 !{N}.next
+18 input 3 !{%mem.0}.next
+19 input 4 !pc[0].next
+20 input 4 !pc[1].next
+21 input 4 !pc[2].next
+22 state 1 !{$(in_main#0)<a>}
+23 state 1 !{$(in_main#0)<b>}
+24 state 1 !{$(in_main#0)<c>}
+25 state 1 !{$(in_main#0)<i>}
+26 state 1 !{%memaddr}
+27 state 1 !{N}
+28 state 3 !{%mem.0}
+29 state 4 !pc[0]
+30 state 4 !pc[1]
+31 state 4 !pc[2]
+32 state 4 reset0
+33 state 4 valid
+34 not 4 32
+35 not 4 29
+36 and 4 30 35
+37 not 4 31
+38 and 4 37 36
+39 not 4 19
+40 and 4 20 39
+41 and 4 21 40
+42 and 4 41 38
+43 eq 4 23 13
+44 eq 4 22 12
+45 and 4 44 43
+46 eq 4 24 14
+47 and 4 46 45
+48 constd 1 1
+49 eq 4 15 48
+50 and 4 49 47
+51 eq 4 26 16
+52 and 4 51 50
+53 eq 4 27 17
+54 and 4 53 52
+55 eq 4 28 18
+56 and 4 55 54
+57 slt 4 25 27
+58 not 4 57
+59 and 4 58 56
+60 and 4 59 42
+61 not 4 21
+62 and 4 61 40
+63 and 4 62 38
+64 add 1 22 25
+65 constd 1 4294967295
+66 add 1 65 64
+67 read 2 28 66
+68 constd 2 6
+69 add 2 68 67
+70 write 3 28 64 69
+71 eq 4 18 70
+72 add 1 48 25
+73 eq 4 15 72
+74 and 4 47 73
+75 and 4 51 74
+76 and 4 53 75
+77 and 4 76 71
+78 and 4 57 77
+79 and 4 78 63
+80 or 4 79 60
+81 and 4 31 36
+82 not 4 20
+83 and 4 19 82
+84 and 4 21 83
+85 and 4 84 81
+86 and 4 59 85
+87 and 4 81 41
+88 add 1 23 25
+89 add 1 65 88
+90 read 2 28 89
+91 add 2 90 67
+92 write 3 28 88 91
+93 eq 4 18 92
+94 and 4 76 93
+95 and 4 57 94
+96 and 4 95 87
+97 or 4 96 86
+98 not 4 30
+99 and 4 29 98
+100 and 4 31 99
+101 and 4 19 20
+102 and 4 61 101
+103 and 4 102 100
+104 constd 1 0
+105 eq 4 15 104
+106 and 4 47 105
+107 and 4 51 106
+108 and 4 53 107
+109 and 4 55 108
+110 and 4 58 109
+111 and 4 110 103
+112 and 4 100 84
+113 add 1 24 25
+114 add 1 65 113
+115 read 2 28 114
+116 add 2 115 90
+117 write 3 28 113 116
+118 eq 4 18 117
+119 and 4 76 118
+120 and 4 57 119
+121 and 4 120 112
+122 or 4 121 111
+123 and 4 29 30
+124 and 4 37 123
+125 and 4 83 61
+126 and 4 125 124
+127 eq 4 25 15
+128 and 4 127 47
+129 and 4 51 128
+130 and 4 53 129
+131 and 4 55 130
+132 and 4 58 131
+133 and 4 132 126
+134 and 4 124 102
+135 and 4 55 76
+136 mul 1 25 25
+137 mul 1 25 136
+138 add 1 27 137
+139 sext 2 138 32
+140 read 2 28 113
+141 eq 4 140 139
+142 ite 1 141 48 104
+143 eq 4 142 104
+144 not 4 143
+145 and 4 144 135
+146 and 4 57 145
+147 and 4 146 134
+148 and 4 82 39
+149 and 4 21 148
+150 and 4 124 149
+151 and 4 143 44
+152 and 4 151 43
+153 and 4 152 46
+154 and 4 153 127
+155 and 4 154 51
+156 and 4 155 53
+157 and 4 55 156
+158 and 4 57 157
+159 and 4 158 150
+160 or 4 159 147
+161 or 4 160 133
+162 and 4 35 98
+163 and 4 162 37
+164 and 4 163 62
+165 constd 2 0
+166 constd 1 3
+167 sll 1 7 166
+168 sll 1 167 48
+169 add 1 48 168
+170 constd 2 1
+171 add 1 48 167
+172 write 3 28 48 68
+173 write 3 172 171 170
+174 write 3 173 169 165
+175 eq 4 18 174
+176 add 1 167 168
+177 add 1 48 176
+178 eq 4 16 177
+179 eq 4 14 169
+180 eq 4 13 171
+181 eq 4 12 48
+182 and 4 181 180
+183 and 4 182 179
+184 and 4 183 49
+185 and 4 184 178
+186 eq 4 17 7
+187 and 4 186 185
+188 and 4 187 175
+189 constd 1 536870911
+190 ult 4 189 7
+191 not 4 190
+192 ite 1 191 48 104
+193 eq 4 192 104
+194 not 4 193
+195 and 4 194 188
+196 slt 4 104 7
+197 and 4 196 195
+198 and 4 197 164
+199 and 4 163 125
+200 eq 4 16 48
+201 eq 4 15 11
+202 eq 4 14 10
+203 eq 4 13 9
+204 eq 4 12 8
+205 and 4 204 203
+206 and 4 205 202
+207 and 4 206 201
+208 and 4 207 200
+209 and 4 208 186
+210 and 4 209 55
+211 not 4 196
+212 and 4 211 210
+213 and 4 212 199
+214 or 4 213 198
+215 or 4 214 161
+216 or 4 215 122
+217 or 4 216 97
+218 or 4 217 80
+219 and 4 218 33
+220 or 4 219 34
+221 and 4 61 148
+222 or 4 32 221
+223 and 4 222 220
+224 and 4 31 162
+225 and 4 224 33
+226 next 1 22 12
+227 next 1 23 13
+228 next 1 24 14
+229 next 1 25 15
+230 next 1 26 16
+231 next 1 27 17
+232 next 3 28 18
+233 next 4 29 19
+234 next 4 30 20
+235 next 4 31 21
+236 init 4 32 5
+237 next 4 32 6
+238 init 4 33 5
+239 next 4 33 223
+240 bad 225
