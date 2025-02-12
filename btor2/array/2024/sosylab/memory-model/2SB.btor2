@@ -1,0 +1,2832 @@
+1 sort bitvec 3
+2 sort bitvec 2
+3 sort bitvec 8
+4 sort bitvec 32
+5 sort array 4 3
+6 sort array 4 2
+7 sort array 4 4
+8 sort bitvec 1
+9 constd 8 0
+10 constd 8 1
+11 input 1 !{$(in_main#0)<$temp.2>}
+12 input 1 !{$(in_main#0)<$tmp.2>}
+13 input 2 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#0)<h#<__VERIFIER_nondet_headerT.return->type>>>>>}
+14 input 3 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#0)<h#<__VERIFIER_nondet_headerT.return->address>>>>>}
+15 input 3 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#0)<h#<__VERIFIER_nondet_headerT.return->data>>>>>}
+16 input 2 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#1)<h#<__VERIFIER_nondet_headerT.return->type>>>>>}
+17 input 3 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#1)<h#<__VERIFIER_nondet_headerT.return->address>>>>>}
+18 input 3 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<$(in___VERIFIER_nondet_headerT#1)<h#<__VERIFIER_nondet_headerT.return->data>>>>>}
+19 input 4 !{$(in_main#0)<$(in___VERIFIER_nondet_int#12)<h#<__VERIFIER_nondet_int.return>>>}
+20 input 1 !{$(in_main#0)<$(in___VERIFIER_nondet_step#13)<__VERIFIER_nondet_step.return>>}
+21 input 1 !{$(in_main#0)<$(in___VERIFIER_nondet_step#13)<h#<__VERIFIER_nondet_step.return>>>}
+22 input 4 %{$(in_main#0)<cpu0Reads_issued>}#1
+23 input 4 %{$(in_main#0)<cpu0Writes_issued>}#1
+24 input 4 %{$(in_main#0)<cpu1Reads_issued>}#1
+25 input 4 %{$(in_main#0)<cpu1Writes_issued>}#1
+26 input 4 %{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i1>>>}#2
+27 input 4 %{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i0>>>}#2
+28 input 4 %{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i2>>>}#2
+29 input 4 %{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i3>>>}#2
+30 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<ch_tail>>>}#1
+31 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<i>>>}#1
+32 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<data>>>}#1
+33 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<g_history>>}#2
+34 input 4 %{$(in_main#0)<$temp.1>}#4
+35 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<global_time>>}#2
+36 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<sharedmemory>>}#2
+37 input 4 %{$(in_main#0)<cpu1Reads_issued>}#2
+38 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<rd_address>>}#3
+39 input 2 %{$(in_main#0)<$(in_tso_core_read#18)<user_action->type>>}#3
+40 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<user_action->thread>>}#3
+41 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<user_action->address>>}#3
+42 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<user_action->data>>}#3
+43 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<user_action->mdata>>}#3
+44 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<wrBuffer>>>}#2
+45 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<address>>>}#2
+46 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<checked>>>}#3
+47 input 5 %{%mem.3}#6
+48 input 6 %{%mem.r.1.0}#2
+49 input 4 %{$(in_main#0)<cpu1Writes_issued>}#2
+50 input 5 %{%mem.3}#11
+51 input 6 %{%mem.r.1.0}#3
+52 input 7 %{%mem.r.0.1}#2
+53 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<ch_tail>>>}#1
+54 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<i>>>}#1
+55 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<data>>>}#1
+56 input 4 %{$(in_main#0)<cpu0Reads_issued>}#2
+57 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<g_history>>}#2
+58 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<global_time>>}#2
+59 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<sharedmemory>>}#2
+60 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<rd_address>>}#3
+61 input 2 %{$(in_main#0)<$(in_tso_core_read#14)<user_action->type>>}#3
+62 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<user_action->thread>>}#3
+63 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<user_action->address>>}#3
+64 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<user_action->data>>}#3
+65 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<user_action->mdata>>}#3
+66 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<wrBuffer>>>}#2
+67 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<address>>>}#2
+68 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<checked>>>}#3
+69 input 4 %{$(in_main#0)<cpu0Writes_issued>}#2
+70 input 4 %{$(in_main#0)<$aux>}#6
+71 input 2 %{$(in_main#0)<input_action->type>}#2
+72 input 3 %{$(in_main#0)<input_action->thread>}#2
+73 input 3 %{$(in_main#0)<input_action->address>}#2
+74 input 3 %{$(in_main#0)<input_action->data>}#2
+75 input 3 %{$(in_main#0)<input_action->mdata>}#2
+76 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<ch_tail>>>}#2
+77 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<checked>>>}#2
+78 input 4 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<check_buffer.return>>>}#2
+79 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<data>>>}#2
+80 input 3 %{$(in_main#0)<$(in_tso_core_read#14)<data>>}#3
+81 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<ch_tail>>>}#2
+82 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<checked>>>}#2
+83 input 4 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<check_buffer.return>>>}#2
+84 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<data>>>}#2
+85 input 3 %{$(in_main#0)<$(in_tso_core_read#18)<data>>}#3
+86 input 5 %{%mem.3}#5
+87 input 4 %{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<i#1>>>}#1
+88 input 4 !{$(in_main#0)<cpu1Reads_issued>}.next
+89 input 4 !{$(in_main#0)<cpu1Writes_issued>}.next
+90 input 4 !{$(in_main#0)<&g_history>}.next
+91 input 4 !{$(in_main#0)<&sharedMemory>}.next
+92 input 4 !{$(in_main#0)<&wrBuffer0>}.next
+93 input 4 !{$(in_main#0)<&wrBuffer1>}.next
+94 input 4 !{$(in_main#0)<&litmus_input>}.next
+95 input 4 !{$(in_main#0)<&global_time>}.next
+96 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<g_history>>>}.next
+97 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i0>>>}.next
+98 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i1>>>}.next
+99 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i2>>>}.next
+100 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i3>>>}.next
+101 input 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<i>>>}.next
+102 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<g_history>>}.next
+103 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<global_time>>}.next
+104 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<sharedmemory>>}.next
+105 input 4 !{%memaddr}.next
+106 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<rd_address>>}.next
+107 input 4 !{$(in_main#0)<$(in_initHistory#8)<history>>}.next
+108 input 4 !{$(in_main#0)<$(in_initHistory#8)<i>>}.next
+109 input 5 !{%mem.3}.next
+110 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<g_history>>}.next
+111 input 7 !{%mem.r.0.0}.next
+112 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<global_time>>}.next
+113 input 7 !{%mem.r.0.1}.next
+114 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<sharedmemory>>}.next
+115 input 6 !{%mem.r.1.0}.next
+116 input 4 !{$(in_main#0)<$(in_initWriteBuffer#9)<wrBuffer>>}.next
+117 input 2 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->type>>}.next
+118 input 4 !{$(in_main#0)<$(in_initWriteBuffer#9)<i>>}.next
+119 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->thread>>}.next
+120 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<rd_address>>}.next
+121 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->address>>}.next
+122 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->data>>}.next
+123 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->mdata>>}.next
+124 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<wrBuffer>>>}.next
+125 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<address>>>}.next
+126 input 4 !{$(in_main#0)<$(in_initWriteBuffer#10)<wrBuffer>>}.next
+127 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<ch_tail>>>}.next
+128 input 4 !{$(in_main#0)<$(in_initWriteBuffer#10)<i>>}.next
+129 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<checked>>>}.next
+130 input 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<i>>>}.next
+131 input 2 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->type>>}.next
+132 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->thread>>}.next
+133 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->address>>}.next
+134 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->data>>}.next
+135 input 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<data>>>}.next
+136 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->mdata>>}.next
+137 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<wrBuffer>>>}.next
+138 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<address>>>}.next
+139 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<litmus_input>>}.next
+140 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<ch_tail>>>}.next
+141 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<checked>>>}.next
+142 input 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<i>>>}.next
+143 input 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<data>>>}.next
+144 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<litmus_input>>>}.next
+145 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<cpu0_operations>>>}.next
+146 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<cpu1_operations>>>}.next
+147 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<i>>>}.next
+148 input 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<i#1>>>}.next
+149 input 4 !{$(in_main#0)<cpu0Reads_issued>}.next
+150 input 4 !{$(in_main#0)<cpu0Writes_issued>}.next
+151 input 8 !pc[0].next
+152 input 8 !pc[1].next
+153 input 8 !pc[2].next
+154 input 8 !pc[3].next
+155 state 4 !{$(in_main#0)<cpu1Reads_issued>}
+156 state 4 !{$(in_main#0)<cpu1Writes_issued>}
+157 state 4 !{$(in_main#0)<&g_history>}
+158 state 4 !{$(in_main#0)<&sharedMemory>}
+159 state 4 !{$(in_main#0)<&wrBuffer0>}
+160 state 4 !{$(in_main#0)<&wrBuffer1>}
+161 state 4 !{$(in_main#0)<&litmus_input>}
+162 state 4 !{$(in_main#0)<&global_time>}
+163 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<g_history>>>}
+164 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i0>>>}
+165 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i1>>>}
+166 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i2>>>}
+167 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<event_i3>>>}
+168 state 4 !{$(in_main#0)<$(in_test_assertions#22)<$(in_store_buffering_2_assertions#0)<i>>>}
+169 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<g_history>>}
+170 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<global_time>>}
+171 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<sharedmemory>>}
+172 state 4 !{%memaddr}
+173 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<rd_address>>}
+174 state 4 !{$(in_main#0)<$(in_initHistory#8)<history>>}
+175 state 4 !{$(in_main#0)<$(in_initHistory#8)<i>>}
+176 state 5 !{%mem.3}
+177 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<g_history>>}
+178 state 7 !{%mem.r.0.0}
+179 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<global_time>>}
+180 state 7 !{%mem.r.0.1}
+181 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<sharedmemory>>}
+182 state 6 !{%mem.r.1.0}
+183 state 4 !{$(in_main#0)<$(in_initWriteBuffer#9)<wrBuffer>>}
+184 state 2 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->type>>}
+185 state 4 !{$(in_main#0)<$(in_initWriteBuffer#9)<i>>}
+186 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->thread>>}
+187 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<rd_address>>}
+188 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->address>>}
+189 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->data>>}
+190 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<user_action->mdata>>}
+191 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<wrBuffer>>>}
+192 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<address>>>}
+193 state 4 !{$(in_main#0)<$(in_initWriteBuffer#10)<wrBuffer>>}
+194 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<ch_tail>>>}
+195 state 4 !{$(in_main#0)<$(in_initWriteBuffer#10)<i>>}
+196 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<checked>>>}
+197 state 4 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<i>>>}
+198 state 2 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->type>>}
+199 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->thread>>}
+200 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->address>>}
+201 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->data>>}
+202 state 3 !{$(in_main#0)<$(in_tso_core_read#18)<$(in_check_buffer#0)<data>>>}
+203 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<user_action->mdata>>}
+204 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<wrBuffer>>>}
+205 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<address>>>}
+206 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<litmus_input>>}
+207 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<ch_tail>>>}
+208 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<checked>>>}
+209 state 4 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<i>>>}
+210 state 3 !{$(in_main#0)<$(in_tso_core_read#14)<$(in_check_buffer#0)<data>>>}
+211 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<litmus_input>>>}
+212 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<cpu0_operations>>>}
+213 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<cpu1_operations>>>}
+214 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<i>>>}
+215 state 4 !{$(in_main#0)<$(in_set_and_randomise_input#11)<$(in_randomise_input#1)<i#1>>>}
+216 state 4 !{$(in_main#0)<cpu0Reads_issued>}
+217 state 4 !{$(in_main#0)<cpu0Writes_issued>}
+218 state 8 !pc[0]
+219 state 8 !pc[1]
+220 state 8 !pc[2]
+221 state 8 !pc[3]
+222 state 8 reset0
+223 state 8 valid
+224 not 8 222
+225 not 8 219
+226 and 8 218 225
+227 not 8 220
+228 and 8 227 226
+229 not 8 221
+230 and 8 229 228
+231 and 8 151 152
+232 not 8 153
+233 and 8 232 231
+234 and 8 154 233
+235 and 8 234 230
+236 constd 4 0
+237 eq 8 118 236
+238 eq 8 159 116
+239 eq 8 175 108
+240 eq 8 176 109
+241 eq 8 174 107
+242 eq 8 172 105
+243 eq 8 162 95
+244 eq 8 161 94
+245 eq 8 160 93
+246 eq 8 159 92
+247 eq 8 158 91
+248 eq 8 157 90
+249 eq 8 156 89
+250 eq 8 155 88
+251 and 8 250 249
+252 and 8 251 248
+253 and 8 252 247
+254 and 8 253 246
+255 and 8 254 245
+256 and 8 255 244
+257 and 8 256 243
+258 eq 8 163 96
+259 and 8 258 257
+260 eq 8 164 97
+261 and 8 260 259
+262 eq 8 165 98
+263 and 8 262 261
+264 eq 8 166 99
+265 and 8 264 263
+266 eq 8 167 100
+267 and 8 266 265
+268 eq 8 168 101
+269 and 8 268 267
+270 eq 8 169 102
+271 and 8 270 269
+272 eq 8 170 103
+273 and 8 272 271
+274 eq 8 171 104
+275 and 8 274 273
+276 and 8 275 242
+277 eq 8 173 106
+278 and 8 277 276
+279 and 8 278 241
+280 and 8 279 240
+281 and 8 280 239
+282 eq 8 177 110
+283 and 8 282 281
+284 eq 8 178 111
+285 and 8 284 283
+286 eq 8 179 112
+287 and 8 286 285
+288 eq 8 180 113
+289 and 8 288 287
+290 eq 8 181 114
+291 and 8 290 289
+292 eq 8 182 115
+293 and 8 292 291
+294 eq 8 184 117
+295 and 8 294 293
+296 and 8 295 238
+297 eq 8 186 119
+298 and 8 297 296
+299 eq 8 187 120
+300 and 8 299 298
+301 and 8 300 237
+302 eq 8 188 121
+303 and 8 302 301
+304 eq 8 189 122
+305 and 8 304 303
+306 eq 8 190 123
+307 and 8 306 305
+308 eq 8 191 124
+309 and 8 308 307
+310 eq 8 192 125
+311 and 8 310 309
+312 eq 8 194 127
+313 and 8 312 311
+314 eq 8 193 126
+315 and 8 314 313
+316 eq 8 196 129
+317 and 8 316 315
+318 eq 8 195 128
+319 and 8 318 317
+320 eq 8 197 130
+321 and 8 320 319
+322 eq 8 198 131
+323 and 8 322 321
+324 eq 8 199 132
+325 and 8 324 323
+326 eq 8 200 133
+327 and 8 326 325
+328 eq 8 201 134
+329 and 8 328 327
+330 eq 8 202 135
+331 and 8 330 329
+332 eq 8 203 136
+333 and 8 332 331
+334 eq 8 204 137
+335 and 8 334 333
+336 eq 8 205 138
+337 and 8 336 335
+338 eq 8 206 139
+339 and 8 338 337
+340 eq 8 207 140
+341 and 8 340 339
+342 eq 8 208 141
+343 and 8 342 341
+344 eq 8 209 142
+345 and 8 344 343
+346 eq 8 210 143
+347 and 8 346 345
+348 eq 8 211 144
+349 and 8 348 347
+350 eq 8 212 145
+351 and 8 350 349
+352 eq 8 213 146
+353 and 8 352 351
+354 eq 8 214 147
+355 and 8 354 353
+356 eq 8 215 148
+357 and 8 356 355
+358 eq 8 216 149
+359 and 8 358 357
+360 eq 8 217 150
+361 and 8 360 359
+362 constd 4 9
+363 slt 8 175 362
+364 not 8 363
+365 and 8 364 361
+366 and 8 365 235
+367 not 8 154
+368 not 8 152
+369 and 8 151 368
+370 and 8 369 232
+371 and 8 370 367
+372 and 8 371 230
+373 constd 2 0
+374 constd 4 5
+375 mul 4 374 175
+376 add 4 174 375
+377 write 6 182 376 373
+378 eq 8 115 377
+379 constd 4 1
+380 add 4 379 175
+381 eq 8 108 380
+382 constd 3 0
+383 constd 4 4
+384 add 4 383 376
+385 constd 4 3
+386 add 4 385 376
+387 constd 4 2
+388 add 4 387 376
+389 add 4 379 376
+390 write 5 176 389 382
+391 write 5 390 388 382
+392 write 5 391 386 382
+393 write 5 392 384 382
+394 eq 8 109 393
+395 and 8 279 394
+396 and 8 395 381
+397 and 8 282 396
+398 and 8 284 397
+399 and 8 286 398
+400 and 8 288 399
+401 and 8 290 400
+402 and 8 401 378
+403 and 8 294 402
+404 eq 8 183 116
+405 and 8 404 403
+406 and 8 297 405
+407 and 8 299 406
+408 eq 8 185 118
+409 and 8 408 407
+410 and 8 302 409
+411 and 8 304 410
+412 and 8 306 411
+413 and 8 308 412
+414 and 8 310 413
+415 and 8 312 414
+416 and 8 314 415
+417 and 8 316 416
+418 and 8 318 417
+419 and 8 320 418
+420 and 8 322 419
+421 and 8 324 420
+422 and 8 326 421
+423 and 8 328 422
+424 and 8 330 423
+425 and 8 332 424
+426 and 8 334 425
+427 and 8 336 426
+428 and 8 338 427
+429 and 8 340 428
+430 and 8 342 429
+431 and 8 344 430
+432 and 8 346 431
+433 and 8 348 432
+434 and 8 350 433
+435 and 8 352 434
+436 and 8 354 435
+437 and 8 356 436
+438 and 8 358 437
+439 and 8 360 438
+440 and 8 363 439
+441 and 8 440 372
+442 or 8 441 366
+443 and 8 218 219
+444 and 8 227 443
+445 and 8 221 444
+446 not 8 151
+447 and 8 152 446
+448 and 8 232 447
+449 and 8 154 448
+450 and 8 449 445
+451 eq 8 128 236
+452 eq 8 160 126
+453 add 4 387 183
+454 add 4 379 183
+455 write 5 176 454 382
+456 write 5 455 453 382
+457 eq 8 109 456
+458 and 8 279 457
+459 and 8 239 458
+460 and 8 282 459
+461 and 8 284 460
+462 and 8 286 461
+463 and 8 288 462
+464 and 8 290 463
+465 and 8 292 464
+466 and 8 294 465
+467 and 8 404 466
+468 and 8 297 467
+469 and 8 299 468
+470 and 8 408 469
+471 and 8 302 470
+472 and 8 304 471
+473 and 8 306 472
+474 and 8 308 473
+475 and 8 310 474
+476 and 8 312 475
+477 and 8 476 452
+478 and 8 316 477
+479 and 8 478 451
+480 and 8 320 479
+481 and 8 322 480
+482 and 8 324 481
+483 and 8 326 482
+484 and 8 328 483
+485 and 8 330 484
+486 and 8 332 485
+487 and 8 334 486
+488 and 8 336 487
+489 and 8 338 488
+490 and 8 340 489
+491 and 8 342 490
+492 and 8 344 491
+493 and 8 346 492
+494 and 8 348 493
+495 and 8 350 494
+496 and 8 352 495
+497 and 8 354 496
+498 and 8 356 497
+499 and 8 358 498
+500 and 8 360 499
+501 slt 8 185 387
+502 not 8 501
+503 and 8 502 500
+504 and 8 503 450
+505 and 8 445 234
+506 add 4 379 185
+507 eq 8 118 506
+508 mul 4 374 185
+509 read 4 178 183
+510 add 4 509 508
+511 write 6 182 510 373
+512 eq 8 115 511
+513 add 4 383 510
+514 add 4 385 510
+515 add 4 387 510
+516 add 4 379 510
+517 write 5 176 516 382
+518 write 5 517 515 382
+519 write 5 518 514 382
+520 write 5 519 513 382
+521 eq 8 109 520
+522 and 8 279 521
+523 and 8 239 522
+524 and 8 282 523
+525 and 8 284 524
+526 and 8 286 525
+527 and 8 288 526
+528 and 8 290 527
+529 and 8 528 512
+530 and 8 294 529
+531 and 8 404 530
+532 and 8 297 531
+533 and 8 299 532
+534 and 8 533 507
+535 and 8 302 534
+536 and 8 304 535
+537 and 8 306 536
+538 and 8 308 537
+539 and 8 310 538
+540 and 8 312 539
+541 and 8 314 540
+542 and 8 316 541
+543 and 8 318 542
+544 and 8 320 543
+545 and 8 322 544
+546 and 8 324 545
+547 and 8 326 546
+548 and 8 328 547
+549 and 8 330 548
+550 and 8 332 549
+551 and 8 334 550
+552 and 8 336 551
+553 and 8 338 552
+554 and 8 340 553
+555 and 8 342 554
+556 and 8 344 555
+557 and 8 346 556
+558 and 8 348 557
+559 and 8 350 558
+560 and 8 352 559
+561 and 8 354 560
+562 and 8 356 561
+563 and 8 358 562
+564 and 8 360 563
+565 and 8 501 564
+566 and 8 565 505
+567 or 8 566 504
+568 not 8 218
+569 and 8 219 568
+570 and 8 227 569
+571 and 8 221 570
+572 and 8 154 370
+573 and 8 572 571
+574 eq 8 145 387
+575 eq 8 161 144
+576 eq 8 161 139
+577 constd 2 3
+578 add 4 383 161
+579 read 4 178 578
+580 add 4 374 579
+581 constd 2 1
+582 read 4 178 161
+583 add 4 374 582
+584 write 6 182 582 581
+585 write 6 584 583 577
+586 write 6 585 579 581
+587 write 6 586 580 577
+588 eq 8 115 587
+589 constd 4 7
+590 add 4 589 161
+591 constd 4 6
+592 add 4 591 161
+593 add 4 385 161
+594 add 4 387 161
+595 add 4 374 161
+596 add 4 379 161
+597 write 7 180 596 236
+598 write 7 597 595 236
+599 write 7 598 594 379
+600 write 7 599 593 379
+601 write 7 600 592 379
+602 write 7 601 590 379
+603 eq 8 113 602
+604 constd 3 1
+605 add 4 591 579
+606 constd 3 3
+607 add 4 362 579
+608 add 4 589 579
+609 add 4 379 579
+610 add 4 385 579
+611 constd 3 2
+612 add 4 383 579
+613 add 4 387 579
+614 add 4 591 582
+615 add 4 362 582
+616 add 4 589 582
+617 add 4 379 582
+618 add 4 385 582
+619 add 4 383 582
+620 add 4 387 582
+621 add 4 387 193
+622 add 4 379 193
+623 write 5 176 622 382
+624 write 5 623 621 382
+625 write 5 624 620 382
+626 write 5 625 619 382
+627 write 5 626 618 604
+628 write 5 627 617 382
+629 write 5 628 616 604
+630 write 5 629 615 604
+631 write 5 630 614 382
+632 write 5 631 613 604
+633 write 5 632 612 611
+634 write 5 633 610 604
+635 write 5 634 609 604
+636 write 5 635 608 382
+637 write 5 636 607 606
+638 write 5 637 605 604
+639 eq 8 109 638
+640 and 8 279 639
+641 and 8 239 640
+642 and 8 282 641
+643 and 8 284 642
+644 and 8 286 643
+645 and 8 644 603
+646 and 8 290 645
+647 and 8 646 588
+648 and 8 294 647
+649 and 8 404 648
+650 and 8 297 649
+651 and 8 299 650
+652 and 8 408 651
+653 and 8 302 652
+654 and 8 304 653
+655 and 8 306 654
+656 and 8 308 655
+657 and 8 310 656
+658 and 8 312 657
+659 and 8 314 658
+660 and 8 316 659
+661 and 8 318 660
+662 and 8 320 661
+663 and 8 322 662
+664 and 8 324 663
+665 and 8 326 664
+666 and 8 328 665
+667 and 8 330 666
+668 and 8 332 667
+669 and 8 334 668
+670 and 8 336 669
+671 and 8 670 576
+672 and 8 340 671
+673 and 8 342 672
+674 and 8 344 673
+675 and 8 346 674
+676 and 8 675 575
+677 and 8 676 574
+678 eq 8 146 387
+679 and 8 678 677
+680 eq 8 147 236
+681 and 8 680 679
+682 eq 8 148 87
+683 and 8 682 681
+684 and 8 358 683
+685 and 8 360 684
+686 slt 8 195 387
+687 not 8 686
+688 and 8 687 685
+689 and 8 688 573
+690 and 8 571 449
+691 add 4 379 195
+692 eq 8 128 691
+693 mul 4 374 195
+694 read 4 178 193
+695 add 4 694 693
+696 write 6 182 695 373
+697 eq 8 115 696
+698 add 4 383 695
+699 add 4 385 695
+700 add 4 387 695
+701 add 4 379 695
+702 write 5 176 701 382
+703 write 5 702 700 382
+704 write 5 703 699 382
+705 write 5 704 698 382
+706 eq 8 109 705
+707 and 8 279 706
+708 and 8 239 707
+709 and 8 282 708
+710 and 8 284 709
+711 and 8 286 710
+712 and 8 288 711
+713 and 8 290 712
+714 and 8 713 697
+715 and 8 294 714
+716 and 8 404 715
+717 and 8 297 716
+718 and 8 299 717
+719 and 8 408 718
+720 and 8 302 719
+721 and 8 304 720
+722 and 8 306 721
+723 and 8 308 722
+724 and 8 310 723
+725 and 8 312 724
+726 and 8 314 725
+727 and 8 316 726
+728 and 8 727 692
+729 and 8 320 728
+730 and 8 322 729
+731 and 8 324 730
+732 and 8 326 731
+733 and 8 328 732
+734 and 8 330 733
+735 and 8 332 734
+736 and 8 334 735
+737 and 8 336 736
+738 and 8 338 737
+739 and 8 340 738
+740 and 8 342 739
+741 and 8 344 740
+742 and 8 346 741
+743 and 8 348 742
+744 and 8 350 743
+745 and 8 352 744
+746 and 8 354 745
+747 and 8 356 746
+748 and 8 358 747
+749 and 8 360 748
+750 and 8 686 749
+751 and 8 750 690
+752 or 8 751 689
+753 and 8 221 228
+754 and 8 368 446
+755 and 8 232 754
+756 and 8 154 755
+757 and 8 756 753
+758 eq 8 148 236
+759 and 8 404 295
+760 and 8 297 759
+761 and 8 299 760
+762 and 8 408 761
+763 and 8 302 762
+764 and 8 304 763
+765 and 8 306 764
+766 and 8 308 765
+767 and 8 310 766
+768 and 8 312 767
+769 and 8 314 768
+770 and 8 316 769
+771 and 8 318 770
+772 and 8 320 771
+773 and 8 322 772
+774 and 8 324 773
+775 and 8 326 774
+776 and 8 328 775
+777 and 8 330 776
+778 and 8 332 777
+779 and 8 334 778
+780 and 8 336 779
+781 and 8 338 780
+782 and 8 340 781
+783 and 8 342 782
+784 and 8 344 783
+785 and 8 346 784
+786 and 8 348 785
+787 and 8 350 786
+788 and 8 352 787
+789 and 8 354 788
+790 and 8 789 758
+791 and 8 358 790
+792 and 8 360 791
+793 slt 8 214 362
+794 not 8 793
+795 and 8 794 792
+796 and 8 795 757
+797 and 8 753 572
+798 add 4 379 214
+799 eq 8 147 798
+800 eq 8 115 48
+801 eq 8 109 86
+802 and 8 279 801
+803 and 8 239 802
+804 and 8 282 803
+805 and 8 284 804
+806 and 8 286 805
+807 and 8 288 806
+808 and 8 290 807
+809 and 8 808 800
+810 and 8 294 809
+811 and 8 404 810
+812 and 8 297 811
+813 and 8 299 812
+814 and 8 408 813
+815 and 8 302 814
+816 and 8 304 815
+817 and 8 306 816
+818 and 8 308 817
+819 and 8 310 818
+820 and 8 312 819
+821 and 8 314 820
+822 and 8 316 821
+823 and 8 318 822
+824 and 8 320 823
+825 and 8 322 824
+826 and 8 324 825
+827 and 8 326 826
+828 and 8 328 827
+829 and 8 330 828
+830 and 8 332 829
+831 and 8 334 830
+832 and 8 336 831
+833 and 8 338 832
+834 and 8 340 833
+835 and 8 342 834
+836 and 8 344 835
+837 and 8 346 836
+838 and 8 348 837
+839 and 8 350 838
+840 and 8 352 839
+841 and 8 840 799
+842 and 8 356 841
+843 and 8 358 842
+844 and 8 360 843
+845 mul 4 374 214
+846 read 4 178 211
+847 add 4 846 845
+848 write 6 182 847 13
+849 eq 8 48 848
+850 add 4 383 847
+851 add 4 385 847
+852 add 4 387 847
+853 add 4 379 847
+854 write 5 176 853 382
+855 write 5 854 852 14
+856 write 5 855 851 15
+857 write 5 856 850 382
+858 eq 8 86 857
+859 constd 4 10
+860 uext 4 14 24
+861 slt 8 860 859
+862 slt 8 214 212
+863 and 8 862 861
+864 and 8 863 858
+865 and 8 864 849
+866 not 8 862
+867 eq 8 176 86
+868 and 8 867 866
+869 eq 8 182 48
+870 and 8 869 868
+871 or 8 870 865
+872 and 8 871 844
+873 and 8 793 872
+874 and 8 873 797
+875 or 8 874 796
+876 and 8 568 225
+877 and 8 876 227
+878 and 8 221 877
+879 and 8 153 369
+880 and 8 367 879
+881 and 8 880 878
+882 eq 8 150 236
+883 eq 8 149 236
+884 add 4 383 206
+885 read 4 178 884
+886 add 4 374 885
+887 read 4 178 206
+888 add 4 374 887
+889 write 6 182 887 581
+890 write 6 889 888 577
+891 write 6 890 885 581
+892 write 6 891 886 577
+893 eq 8 115 892
+894 add 4 589 206
+895 add 4 591 206
+896 add 4 385 206
+897 add 4 387 206
+898 add 4 374 206
+899 add 4 379 206
+900 write 7 180 899 236
+901 write 7 900 898 236
+902 write 7 901 897 379
+903 write 7 902 896 379
+904 write 7 903 895 379
+905 write 7 904 894 379
+906 eq 8 113 905
+907 add 4 591 885
+908 add 4 362 885
+909 add 4 589 885
+910 add 4 379 885
+911 add 4 385 885
+912 add 4 383 885
+913 add 4 387 885
+914 add 4 591 887
+915 add 4 362 887
+916 add 4 589 887
+917 add 4 379 887
+918 add 4 385 887
+919 add 4 383 887
+920 add 4 387 887
+921 write 5 176 920 382
+922 write 5 921 919 382
+923 write 5 922 918 604
+924 write 5 923 917 382
+925 write 5 924 916 604
+926 write 5 925 915 604
+927 write 5 926 914 382
+928 write 5 927 913 604
+929 write 5 928 912 611
+930 write 5 929 911 604
+931 write 5 930 910 604
+932 write 5 931 909 382
+933 write 5 932 908 606
+934 write 5 933 907 604
+935 eq 8 109 934
+936 eq 8 89 236
+937 eq 8 88 236
+938 and 8 937 936
+939 and 8 248 938
+940 and 8 247 939
+941 and 8 246 940
+942 and 8 245 941
+943 and 8 244 942
+944 and 8 243 943
+945 and 8 258 944
+946 and 8 260 945
+947 and 8 262 946
+948 and 8 264 947
+949 and 8 266 948
+950 and 8 268 949
+951 and 8 270 950
+952 and 8 272 951
+953 and 8 274 952
+954 and 8 242 953
+955 and 8 277 954
+956 and 8 241 955
+957 and 8 956 935
+958 and 8 239 957
+959 and 8 282 958
+960 and 8 284 959
+961 and 8 286 960
+962 and 8 961 906
+963 and 8 290 962
+964 and 8 963 893
+965 and 8 294 964
+966 and 8 404 965
+967 and 8 297 966
+968 and 8 299 967
+969 and 8 408 968
+970 and 8 302 969
+971 and 8 304 970
+972 and 8 306 971
+973 and 8 308 972
+974 and 8 310 973
+975 and 8 312 974
+976 and 8 314 975
+977 and 8 316 976
+978 and 8 318 977
+979 and 8 320 978
+980 and 8 322 979
+981 and 8 324 980
+982 and 8 326 981
+983 and 8 328 982
+984 and 8 330 983
+985 and 8 332 984
+986 and 8 334 985
+987 and 8 336 986
+988 and 8 338 987
+989 and 8 340 988
+990 and 8 342 989
+991 and 8 344 990
+992 and 8 346 991
+993 and 8 348 992
+994 and 8 350 993
+995 and 8 352 994
+996 and 8 354 995
+997 and 8 356 996
+998 and 8 997 883
+999 and 8 998 882
+1000 slt 8 215 362
+1001 not 8 1000
+1002 and 8 1001 999
+1003 and 8 1002 881
+1004 and 8 878 756
+1005 add 4 379 215
+1006 eq 8 148 1005
+1007 and 8 354 840
+1008 and 8 1007 1006
+1009 and 8 358 1008
+1010 and 8 360 1009
+1011 mul 4 374 215
+1012 add 4 383 211
+1013 read 4 178 1012
+1014 add 4 1013 1011
+1015 write 6 182 1014 16
+1016 eq 8 48 1015
+1017 add 4 383 1014
+1018 add 4 385 1014
+1019 add 4 387 1014
+1020 add 4 379 1014
+1021 write 5 176 1020 604
+1022 write 5 1021 1019 17
+1023 write 5 1022 1018 18
+1024 write 5 1023 1017 382
+1025 eq 8 1024 86
+1026 uext 4 17 24
+1027 slt 8 1026 859
+1028 slt 8 215 213
+1029 and 8 1028 1027
+1030 and 8 1029 1025
+1031 and 8 1030 1016
+1032 not 8 1028
+1033 and 8 1032 867
+1034 and 8 1033 869
+1035 or 8 1034 1031
+1036 and 8 1035 1010
+1037 and 8 1000 1036
+1038 and 8 1037 1004
+1039 or 8 1038 1003
+1040 and 8 220 569
+1041 and 8 229 1040
+1042 and 8 880 1041
+1043 eq 8 135 84
+1044 eq 8 129 82
+1045 read 3 176 170
+1046 uext 4 1045 24
+1047 mul 4 374 1046
+1048 add 4 169 1047
+1049 write 6 182 1048 577
+1050 eq 8 115 1049
+1051 read 4 180 595
+1052 add 4 379 1051
+1053 write 7 180 595 1052
+1054 eq 8 113 1053
+1055 add 4 379 1048
+1056 write 5 176 1055 186
+1057 read 3 1056 170
+1058 uext 4 1057 24
+1059 mul 4 374 1058
+1060 add 4 169 1059
+1061 add 4 387 1060
+1062 write 5 1056 1061 188
+1063 read 3 1062 170
+1064 uext 4 1063 24
+1065 mul 4 374 1064
+1066 add 4 169 1065
+1067 add 4 385 1066
+1068 write 5 1062 1067 85
+1069 read 3 1068 170
+1070 uext 4 1069 24
+1071 mul 4 374 1070
+1072 add 4 169 1071
+1073 add 4 383 1072
+1074 write 5 1068 1073 190
+1075 read 3 1074 170
+1076 add 3 604 1075
+1077 write 5 1074 170 1076
+1078 eq 8 109 1077
+1079 add 4 379 155
+1080 eq 8 88 1079
+1081 and 8 249 1080
+1082 and 8 248 1081
+1083 and 8 247 1082
+1084 and 8 246 1083
+1085 and 8 245 1084
+1086 and 8 244 1085
+1087 and 8 243 1086
+1088 and 8 258 1087
+1089 and 8 260 1088
+1090 and 8 262 1089
+1091 and 8 264 1090
+1092 and 8 266 1091
+1093 and 8 268 1092
+1094 and 8 270 1093
+1095 and 8 272 1094
+1096 and 8 274 1095
+1097 and 8 242 1096
+1098 and 8 277 1097
+1099 and 8 241 1098
+1100 and 8 1099 1078
+1101 and 8 239 1100
+1102 and 8 282 1101
+1103 and 8 284 1102
+1104 and 8 286 1103
+1105 and 8 1104 1054
+1106 and 8 290 1105
+1107 and 8 1106 1050
+1108 and 8 294 1107
+1109 and 8 404 1108
+1110 and 8 297 1109
+1111 and 8 299 1110
+1112 and 8 408 1111
+1113 and 8 302 1112
+1114 and 8 304 1113
+1115 and 8 306 1114
+1116 and 8 308 1115
+1117 and 8 310 1116
+1118 eq 8 127 81
+1119 and 8 1118 1117
+1120 and 8 314 1119
+1121 and 8 1120 1044
+1122 and 8 318 1121
+1123 and 8 320 1122
+1124 and 8 322 1123
+1125 and 8 324 1124
+1126 and 8 326 1125
+1127 and 8 328 1126
+1128 and 8 1127 1043
+1129 and 8 332 1128
+1130 and 8 334 1129
+1131 and 8 336 1130
+1132 and 8 338 1131
+1133 and 8 340 1132
+1134 and 8 342 1133
+1135 and 8 344 1134
+1136 and 8 346 1135
+1137 and 8 348 1136
+1138 and 8 350 1137
+1139 and 8 352 1138
+1140 and 8 354 1139
+1141 and 8 356 1140
+1142 and 8 358 1141
+1143 and 8 360 1142
+1144 uext 4 173 24
+1145 add 4 171 1144
+1146 read 3 176 1145
+1147 eq 8 1146 85
+1148 constd 4 4294967295
+1149 eq 8 83 1148
+1150 and 8 1149 1147
+1151 eq 8 84 85
+1152 not 8 1149
+1153 and 8 1152 1151
+1154 or 8 1153 1150
+1155 and 8 1154 1143
+1156 eq 8 202 84
+1157 add 4 1148 196
+1158 eq 8 1157 82
+1159 eq 8 196 379
+1160 uext 4 194 24
+1161 add 4 1148 1160
+1162 srem 4 1161 387
+1163 slice 3 1162 7 0
+1164 eq 8 1163 81
+1165 eq 8 194 382
+1166 not 8 1165
+1167 and 8 1166 1164
+1168 eq 8 81 604
+1169 and 8 1165 1168
+1170 or 8 1169 1167
+1171 and 8 1170 1159
+1172 uext 4 192 24
+1173 mul 4 374 1160
+1174 read 4 178 191
+1175 add 4 1174 1173
+1176 add 4 387 1175
+1177 read 3 176 1176
+1178 uext 4 1177 24
+1179 eq 8 1178 1172
+1180 not 8 1179
+1181 and 8 1180 1171
+1182 slt 8 197 387
+1183 and 8 1182 1181
+1184 and 8 1183 1158
+1185 eq 8 196 82
+1186 eq 8 194 81
+1187 not 8 1182
+1188 and 8 1187 1186
+1189 and 8 1188 1185
+1190 or 8 1189 1184
+1191 and 8 1190 1149
+1192 and 8 1191 1156
+1193 add 4 385 1175
+1194 read 3 176 1193
+1195 eq 8 1194 84
+1196 eq 8 83 379
+1197 and 8 1182 1179
+1198 and 8 1186 1197
+1199 and 8 1185 1198
+1200 and 8 1199 1196
+1201 and 8 1200 1195
+1202 or 8 1201 1192
+1203 and 8 1202 1155
+1204 and 8 1203 1042
+1205 and 8 153 447
+1206 and 8 367 1205
+1207 and 8 1206 1041
+1208 add 4 379 197
+1209 eq 8 130 1208
+1210 eq 8 129 1157
+1211 and 8 767 1118
+1212 and 8 314 1211
+1213 and 8 1212 1210
+1214 and 8 318 1213
+1215 and 8 1214 1209
+1216 and 8 322 1215
+1217 and 8 324 1216
+1218 and 8 326 1217
+1219 and 8 328 1218
+1220 and 8 330 1219
+1221 and 8 332 1220
+1222 and 8 334 1221
+1223 and 8 336 1222
+1224 and 8 338 1223
+1225 and 8 340 1224
+1226 and 8 342 1225
+1227 and 8 344 1226
+1228 and 8 346 1227
+1229 and 8 348 1228
+1230 and 8 350 1229
+1231 and 8 352 1230
+1232 and 8 354 1231
+1233 and 8 356 1232
+1234 and 8 358 1233
+1235 and 8 360 1234
+1236 not 8 1159
+1237 and 8 1236 1235
+1238 and 8 1170 1237
+1239 and 8 1180 1238
+1240 and 8 1182 1239
+1241 and 8 1240 1207
+1242 or 8 1241 1204
+1243 and 8 220 443
+1244 and 8 229 1243
+1245 and 8 880 1244
+1246 add 4 379 216
+1247 eq 8 149 1246
+1248 eq 8 143 79
+1249 eq 8 141 77
+1250 read 3 176 179
+1251 uext 4 1250 24
+1252 mul 4 374 1251
+1253 add 4 177 1252
+1254 write 6 182 1253 577
+1255 eq 8 115 1254
+1256 read 4 180 596
+1257 add 4 379 1256
+1258 write 7 180 596 1257
+1259 eq 8 113 1258
+1260 add 4 379 1253
+1261 write 5 176 1260 199
+1262 read 3 1261 179
+1263 uext 4 1262 24
+1264 mul 4 374 1263
+1265 add 4 177 1264
+1266 add 4 387 1265
+1267 write 5 1261 1266 200
+1268 read 3 1267 179
+1269 uext 4 1268 24
+1270 mul 4 374 1269
+1271 add 4 177 1270
+1272 add 4 385 1271
+1273 write 5 1267 1272 80
+1274 read 3 1273 179
+1275 uext 4 1274 24
+1276 mul 4 374 1275
+1277 add 4 177 1276
+1278 add 4 383 1277
+1279 write 5 1273 1278 203
+1280 read 3 1279 179
+1281 add 3 604 1280
+1282 write 5 1279 179 1281
+1283 eq 8 109 1282
+1284 and 8 279 1283
+1285 and 8 239 1284
+1286 and 8 282 1285
+1287 and 8 284 1286
+1288 and 8 286 1287
+1289 and 8 1288 1259
+1290 and 8 290 1289
+1291 and 8 1290 1255
+1292 and 8 294 1291
+1293 and 8 404 1292
+1294 and 8 297 1293
+1295 and 8 299 1294
+1296 and 8 408 1295
+1297 and 8 302 1296
+1298 and 8 304 1297
+1299 and 8 306 1298
+1300 and 8 308 1299
+1301 and 8 310 1300
+1302 and 8 312 1301
+1303 and 8 314 1302
+1304 and 8 316 1303
+1305 and 8 318 1304
+1306 and 8 320 1305
+1307 and 8 322 1306
+1308 and 8 324 1307
+1309 and 8 326 1308
+1310 and 8 328 1309
+1311 and 8 330 1310
+1312 and 8 332 1311
+1313 and 8 334 1312
+1314 and 8 336 1313
+1315 and 8 338 1314
+1316 eq 8 140 76
+1317 and 8 1316 1315
+1318 and 8 1317 1249
+1319 and 8 344 1318
+1320 and 8 1319 1248
+1321 and 8 348 1320
+1322 and 8 350 1321
+1323 and 8 352 1322
+1324 and 8 354 1323
+1325 and 8 356 1324
+1326 and 8 1325 1247
+1327 and 8 360 1326
+1328 uext 4 187 24
+1329 add 4 181 1328
+1330 read 3 176 1329
+1331 eq 8 1330 80
+1332 eq 8 78 1148
+1333 and 8 1332 1331
+1334 eq 8 79 80
+1335 not 8 1332
+1336 and 8 1335 1334
+1337 or 8 1336 1333
+1338 and 8 1337 1327
+1339 eq 8 210 79
+1340 add 4 1148 208
+1341 eq 8 1340 77
+1342 eq 8 208 379
+1343 uext 4 207 24
+1344 add 4 1148 1343
+1345 srem 4 1344 387
+1346 slice 3 1345 7 0
+1347 eq 8 1346 76
+1348 eq 8 207 382
+1349 not 8 1348
+1350 and 8 1349 1347
+1351 eq 8 76 604
+1352 and 8 1348 1351
+1353 or 8 1352 1350
+1354 and 8 1353 1342
+1355 uext 4 205 24
+1356 mul 4 374 1343
+1357 read 4 178 204
+1358 add 4 1357 1356
+1359 add 4 387 1358
+1360 read 3 176 1359
+1361 uext 4 1360 24
+1362 eq 8 1361 1355
+1363 not 8 1362
+1364 and 8 1363 1354
+1365 slt 8 209 387
+1366 and 8 1365 1364
+1367 and 8 1366 1341
+1368 eq 8 208 77
+1369 eq 8 207 76
+1370 not 8 1365
+1371 and 8 1370 1369
+1372 and 8 1371 1368
+1373 or 8 1372 1367
+1374 and 8 1373 1332
+1375 and 8 1374 1339
+1376 add 4 385 1358
+1377 read 3 176 1376
+1378 eq 8 1377 79
+1379 eq 8 78 379
+1380 and 8 1365 1362
+1381 and 8 1369 1380
+1382 and 8 1368 1381
+1383 and 8 1382 1379
+1384 and 8 1383 1378
+1385 or 8 1384 1375
+1386 and 8 1385 1338
+1387 and 8 1386 1245
+1388 and 8 153 231
+1389 and 8 367 1388
+1390 and 8 1389 1244
+1391 add 4 379 209
+1392 eq 8 142 1391
+1393 eq 8 141 1340
+1394 and 8 781 1316
+1395 and 8 1394 1393
+1396 and 8 1395 1392
+1397 and 8 346 1396
+1398 and 8 348 1397
+1399 and 8 350 1398
+1400 and 8 352 1399
+1401 and 8 354 1400
+1402 and 8 356 1401
+1403 and 8 358 1402
+1404 and 8 360 1403
+1405 not 8 1342
+1406 and 8 1405 1404
+1407 and 8 1353 1406
+1408 and 8 1363 1407
+1409 and 8 1365 1408
+1410 and 8 1409 1390
+1411 or 8 1410 1387
+1412 and 8 220 226
+1413 and 8 229 1412
+1414 and 8 153 754
+1415 and 8 367 1414
+1416 and 8 1415 1413
+1417 eq 8 101 236
+1418 eq 8 100 1148
+1419 eq 8 99 1148
+1420 eq 8 98 1148
+1421 eq 8 97 1148
+1422 eq 8 157 96
+1423 and 8 257 1422
+1424 and 8 1423 1421
+1425 and 8 1424 1420
+1426 and 8 1425 1419
+1427 and 8 1426 1418
+1428 and 8 1427 1417
+1429 and 8 270 1428
+1430 and 8 272 1429
+1431 and 8 274 1430
+1432 and 8 242 1431
+1433 and 8 277 1432
+1434 and 8 241 1433
+1435 and 8 240 1434
+1436 and 8 239 1435
+1437 and 8 282 1436
+1438 and 8 284 1437
+1439 and 8 286 1438
+1440 and 8 288 1439
+1441 and 8 290 1440
+1442 and 8 292 1441
+1443 and 8 294 1442
+1444 and 8 404 1443
+1445 and 8 297 1444
+1446 and 8 299 1445
+1447 and 8 408 1446
+1448 and 8 302 1447
+1449 and 8 304 1448
+1450 and 8 306 1449
+1451 and 8 308 1450
+1452 and 8 310 1451
+1453 and 8 312 1452
+1454 and 8 314 1453
+1455 and 8 316 1454
+1456 and 8 318 1455
+1457 and 8 320 1456
+1458 and 8 322 1457
+1459 and 8 324 1458
+1460 and 8 326 1459
+1461 and 8 328 1460
+1462 and 8 330 1461
+1463 and 8 332 1462
+1464 and 8 334 1463
+1465 and 8 336 1464
+1466 and 8 338 1465
+1467 and 8 340 1466
+1468 and 8 342 1467
+1469 and 8 344 1468
+1470 and 8 346 1469
+1471 and 8 348 1470
+1472 and 8 350 1471
+1473 and 8 352 1472
+1474 and 8 354 1473
+1475 and 8 356 1474
+1476 and 8 358 1475
+1477 and 8 360 1476
+1478 add 4 379 160
+1479 read 3 176 1478
+1480 eq 8 1479 382
+1481 and 8 1480 1477
+1482 add 4 379 159
+1483 read 3 176 1482
+1484 eq 8 1483 382
+1485 and 8 1484 1481
+1486 read 4 180 590
+1487 eq 8 155 1486
+1488 and 8 1487 1485
+1489 read 4 180 592
+1490 eq 8 156 1489
+1491 and 8 1490 1488
+1492 read 4 180 593
+1493 eq 8 216 1492
+1494 and 8 1493 1491
+1495 read 4 180 594
+1496 eq 8 217 1495
+1497 and 8 1496 1494
+1498 eq 8 19 236
+1499 and 8 1498 1497
+1500 and 8 1499 1416
+1501 and 8 1413 880
+1502 add 4 387 160
+1503 read 3 176 1502
+1504 uext 4 1503 24
+1505 mul 4 374 1504
+1506 read 4 178 160
+1507 add 4 1506 1505
+1508 add 4 385 1507
+1509 read 3 176 1508
+1510 add 4 387 1507
+1511 read 3 176 1510
+1512 uext 4 1511 24
+1513 add 4 158 1512
+1514 write 5 176 1513 1509
+1515 read 3 1514 1478
+1516 constd 3 255
+1517 add 3 1516 1515
+1518 read 3 1514 1502
+1519 uext 4 1518 24
+1520 add 4 379 1519
+1521 srem 4 1520 387
+1522 slice 3 1521 7 0
+1523 write 5 1514 1502 1522
+1524 write 5 1523 1478 1517
+1525 eq 8 50 1524
+1526 eq 8 155 37
+1527 uext 4 1479 24
+1528 slt 8 236 1527
+1529 constd 1 3
+1530 eq 8 21 1529
+1531 and 8 1530 1528
+1532 constd 1 1
+1533 eq 8 21 1532
+1534 not 8 1533
+1535 and 8 1534 1531
+1536 and 8 1535 1526
+1537 eq 8 156 49
+1538 and 8 1537 1536
+1539 eq 8 169 33
+1540 and 8 1539 1538
+1541 eq 8 170 35
+1542 and 8 1541 1540
+1543 eq 8 171 36
+1544 and 8 1543 1542
+1545 eq 8 173 38
+1546 and 8 1545 1544
+1547 and 8 1546 1525
+1548 eq 8 180 52
+1549 and 8 1548 1547
+1550 eq 8 182 51
+1551 and 8 1550 1549
+1552 eq 8 184 39
+1553 and 8 1552 1551
+1554 eq 8 186 40
+1555 and 8 1554 1553
+1556 eq 8 188 41
+1557 and 8 1556 1555
+1558 eq 8 189 42
+1559 and 8 1558 1557
+1560 eq 8 190 43
+1561 and 8 1560 1559
+1562 eq 8 191 44
+1563 and 8 1562 1561
+1564 eq 8 192 45
+1565 and 8 1564 1563
+1566 eq 8 194 30
+1567 and 8 1566 1565
+1568 eq 8 196 46
+1569 and 8 1568 1567
+1570 eq 8 197 31
+1571 and 8 1570 1569
+1572 eq 8 202 32
+1573 and 8 1572 1571
+1574 eq 8 19 34
+1575 and 8 1574 1573
+1576 eq 8 1053 52
+1577 mul 4 374 1051
+1578 add 4 579 1577
+1579 read 2 182 1578
+1580 add 4 383 1578
+1581 read 3 176 1580
+1582 add 4 1527 1504
+1583 srem 4 1582 387
+1584 mul 4 374 1583
+1585 add 4 1506 1584
+1586 add 4 383 1585
+1587 add 4 385 1578
+1588 read 3 176 1587
+1589 add 4 385 1585
+1590 add 4 387 1578
+1591 read 3 176 1590
+1592 add 4 387 1585
+1593 add 4 379 1578
+1594 read 3 176 1593
+1595 add 4 379 1585
+1596 write 5 176 1595 1594
+1597 write 5 1596 1592 1591
+1598 write 5 1597 1589 1588
+1599 write 5 1598 1586 1581
+1600 read 3 1599 1478
+1601 add 3 604 1600
+1602 write 5 1599 1478 1601
+1603 read 3 1602 162
+1604 uext 4 1603 24
+1605 mul 4 374 1604
+1606 add 4 157 1605
+1607 write 6 182 1585 1579
+1608 write 6 1607 1606 1579
+1609 eq 8 1608 51
+1610 add 4 379 1606
+1611 write 5 1602 1610 1594
+1612 read 3 1611 162
+1613 uext 4 1612 24
+1614 mul 4 374 1613
+1615 add 4 157 1614
+1616 add 4 387 1615
+1617 write 5 1611 1616 1591
+1618 read 3 1617 162
+1619 uext 4 1618 24
+1620 mul 4 374 1619
+1621 add 4 157 1620
+1622 add 4 385 1621
+1623 write 5 1617 1622 1588
+1624 read 3 1623 162
+1625 uext 4 1624 24
+1626 mul 4 374 1625
+1627 add 4 157 1626
+1628 add 4 383 1627
+1629 write 5 1623 1628 1581
+1630 read 3 1629 162
+1631 add 3 604 1630
+1632 write 5 1629 162 1631
+1633 eq 8 1632 50
+1634 slt 8 1527 387
+1635 slt 8 156 1489
+1636 and 8 1635 1634
+1637 eq 8 1579 581
+1638 and 8 1637 1636
+1639 and 8 1638 1526
+1640 add 4 379 156
+1641 eq 8 1640 49
+1642 and 8 1641 1639
+1643 and 8 1539 1642
+1644 and 8 1541 1643
+1645 and 8 1543 1644
+1646 and 8 1545 1645
+1647 and 8 1646 1633
+1648 and 8 1647 1609
+1649 and 8 1552 1648
+1650 and 8 1554 1649
+1651 and 8 1556 1650
+1652 and 8 1558 1651
+1653 and 8 1560 1652
+1654 and 8 1562 1653
+1655 and 8 1564 1654
+1656 and 8 1566 1655
+1657 and 8 1568 1656
+1658 and 8 1570 1657
+1659 and 8 1572 1658
+1660 eq 8 156 34
+1661 and 8 1660 1659
+1662 eq 8 48 51
+1663 eq 8 47 50
+1664 read 3 176 162
+1665 uext 4 1664 24
+1666 mul 4 374 1665
+1667 add 4 157 1666
+1668 write 6 182 1667 577
+1669 eq 8 1668 48
+1670 uext 4 1591 24
+1671 add 4 158 1670
+1672 read 3 176 1671
+1673 add 4 379 1667
+1674 write 5 176 1673 1594
+1675 read 3 1674 162
+1676 uext 4 1675 24
+1677 mul 4 374 1676
+1678 add 4 157 1677
+1679 add 4 387 1678
+1680 write 5 1674 1679 1591
+1681 read 3 1680 162
+1682 uext 4 1681 24
+1683 mul 4 374 1682
+1684 add 4 157 1683
+1685 add 4 385 1684
+1686 write 5 1680 1685 1672
+1687 read 3 1686 162
+1688 uext 4 1687 24
+1689 mul 4 374 1688
+1690 add 4 157 1689
+1691 add 4 383 1690
+1692 write 5 1686 1691 1581
+1693 read 3 1692 162
+1694 add 3 604 1693
+1695 write 5 1692 162 1694
+1696 eq 8 1695 47
+1697 eq 8 1527 46
+1698 eq 8 1591 45
+1699 eq 8 160 44
+1700 eq 8 1581 43
+1701 eq 8 1588 42
+1702 eq 8 1591 41
+1703 eq 8 1594 40
+1704 eq 8 1579 39
+1705 eq 8 1591 38
+1706 eq 8 1079 37
+1707 eq 8 158 36
+1708 eq 8 162 35
+1709 eq 8 155 34
+1710 eq 8 157 33
+1711 slt 8 155 1486
+1712 and 8 1480 1711
+1713 eq 8 1579 577
+1714 and 8 1713 1712
+1715 constd 2 2
+1716 eq 8 1579 1715
+1717 not 8 1716
+1718 and 8 1717 1714
+1719 and 8 1718 1710
+1720 and 8 1719 1709
+1721 and 8 1720 1708
+1722 and 8 1721 1707
+1723 and 8 1722 1706
+1724 and 8 1723 1705
+1725 and 8 1724 1704
+1726 and 8 1725 1703
+1727 and 8 1726 1702
+1728 and 8 1727 1701
+1729 and 8 1728 1700
+1730 and 8 1729 1699
+1731 and 8 1730 1698
+1732 and 8 1731 1697
+1733 and 8 1732 1696
+1734 and 8 1733 1669
+1735 and 8 1734 1537
+1736 write 6 182 1667 1579
+1737 eq 8 1736 48
+1738 write 5 1680 1685 1588
+1739 read 3 1738 162
+1740 uext 4 1739 24
+1741 mul 4 374 1740
+1742 add 4 157 1741
+1743 add 4 383 1742
+1744 write 5 1738 1743 1581
+1745 read 3 1744 162
+1746 add 3 604 1745
+1747 write 5 1744 162 1746
+1748 eq 8 1747 47
+1749 and 8 1635 1480
+1750 and 8 1716 1749
+1751 and 8 1750 1539
+1752 and 8 1751 1660
+1753 and 8 1752 1541
+1754 and 8 1753 1543
+1755 and 8 1754 1526
+1756 and 8 1755 1545
+1757 and 8 1756 1552
+1758 and 8 1757 1554
+1759 and 8 1758 1556
+1760 and 8 1759 1558
+1761 and 8 1760 1560
+1762 and 8 1761 1562
+1763 and 8 1762 1564
+1764 and 8 1763 1566
+1765 and 8 1764 1568
+1766 and 8 1765 1570
+1767 and 8 1766 1572
+1768 and 8 1767 1748
+1769 and 8 1768 1737
+1770 and 8 1769 1641
+1771 or 8 1770 1735
+1772 not 8 1637
+1773 and 8 1772 1771
+1774 and 8 1773 1663
+1775 and 8 1774 1662
+1776 or 8 1775 1661
+1777 uext 4 1594 24
+1778 eq 8 1777 379
+1779 and 8 1778 1776
+1780 and 8 1533 1779
+1781 and 8 1780 1576
+1782 or 8 1781 1575
+1783 constd 1 2
+1784 eq 8 21 1783
+1785 not 8 1784
+1786 and 8 1785 1782
+1787 add 4 387 159
+1788 read 3 176 1787
+1789 uext 4 1788 24
+1790 mul 4 374 1789
+1791 read 4 178 159
+1792 add 4 1791 1790
+1793 add 4 385 1792
+1794 read 3 176 1793
+1795 add 4 387 1792
+1796 read 3 176 1795
+1797 uext 4 1796 24
+1798 add 4 158 1797
+1799 write 5 176 1798 1794
+1800 read 3 1799 1482
+1801 add 3 1516 1800
+1802 read 3 1799 1787
+1803 uext 4 1802 24
+1804 add 4 379 1803
+1805 srem 4 1804 387
+1806 slice 3 1805 7 0
+1807 write 5 1799 1787 1806
+1808 write 5 1807 1482 1801
+1809 eq 8 50 1808
+1810 uext 4 1483 24
+1811 slt 8 236 1810
+1812 and 8 1784 1811
+1813 and 8 1526 1812
+1814 and 8 1537 1813
+1815 and 8 1539 1814
+1816 and 8 1541 1815
+1817 and 8 1543 1816
+1818 and 8 1545 1817
+1819 and 8 1818 1809
+1820 and 8 1548 1819
+1821 and 8 1550 1820
+1822 and 8 1552 1821
+1823 and 8 1554 1822
+1824 and 8 1556 1823
+1825 and 8 1558 1824
+1826 and 8 1560 1825
+1827 and 8 1562 1826
+1828 and 8 1564 1827
+1829 and 8 1566 1828
+1830 and 8 1568 1829
+1831 and 8 1570 1830
+1832 and 8 1572 1831
+1833 and 8 1574 1832
+1834 or 8 1833 1786
+1835 constd 1 0
+1836 eq 8 21 1835
+1837 not 8 1836
+1838 and 8 1837 1834
+1839 eq 8 1578 70
+1840 and 8 1839 1838
+1841 eq 8 1579 71
+1842 and 8 1841 1840
+1843 eq 8 1594 72
+1844 and 8 1843 1842
+1845 eq 8 1591 73
+1846 and 8 1845 1844
+1847 eq 8 1588 74
+1848 and 8 1847 1846
+1849 eq 8 1581 75
+1850 and 8 1849 1848
+1851 eq 8 177 57
+1852 and 8 1851 1850
+1853 eq 8 179 58
+1854 and 8 1853 1852
+1855 eq 8 181 59
+1856 and 8 1855 1854
+1857 eq 8 187 60
+1858 and 8 1857 1856
+1859 eq 8 198 61
+1860 and 8 1859 1858
+1861 eq 8 199 62
+1862 and 8 1861 1860
+1863 eq 8 200 63
+1864 and 8 1863 1862
+1865 eq 8 201 64
+1866 and 8 1865 1864
+1867 eq 8 203 65
+1868 and 8 1867 1866
+1869 eq 8 204 66
+1870 and 8 1869 1868
+1871 eq 8 205 67
+1872 and 8 1871 1870
+1873 eq 8 207 53
+1874 and 8 1873 1872
+1875 eq 8 208 68
+1876 and 8 1875 1874
+1877 eq 8 209 54
+1878 and 8 1877 1876
+1879 eq 8 210 55
+1880 and 8 1879 1878
+1881 eq 8 216 56
+1882 and 8 1881 1880
+1883 eq 8 217 69
+1884 and 8 1883 1882
+1885 eq 8 52 1258
+1886 mul 4 374 1256
+1887 add 4 582 1886
+1888 add 4 383 1887
+1889 read 3 176 1888
+1890 eq 8 1889 75
+1891 add 4 385 1887
+1892 read 3 176 1891
+1893 eq 8 1892 74
+1894 add 4 387 1887
+1895 read 3 176 1894
+1896 eq 8 1895 73
+1897 add 4 379 1887
+1898 read 3 176 1897
+1899 eq 8 1898 72
+1900 read 2 182 1887
+1901 eq 8 1900 71
+1902 eq 8 1887 70
+1903 add 4 1810 1789
+1904 srem 4 1903 387
+1905 mul 4 374 1904
+1906 add 4 1791 1905
+1907 add 4 383 1906
+1908 add 4 385 1906
+1909 add 4 387 1906
+1910 add 4 379 1906
+1911 write 5 176 1910 1898
+1912 write 5 1911 1909 1895
+1913 write 5 1912 1908 1892
+1914 write 5 1913 1907 1889
+1915 read 3 1914 1482
+1916 add 3 604 1915
+1917 write 5 1914 1482 1916
+1918 read 3 1917 162
+1919 uext 4 1918 24
+1920 mul 4 374 1919
+1921 add 4 157 1920
+1922 write 6 182 1906 1900
+1923 write 6 1922 1921 1900
+1924 eq 8 51 1923
+1925 add 4 379 1921
+1926 write 5 1917 1925 1898
+1927 read 3 1926 162
+1928 uext 4 1927 24
+1929 mul 4 374 1928
+1930 add 4 157 1929
+1931 add 4 387 1930
+1932 write 5 1926 1931 1895
+1933 read 3 1932 162
+1934 uext 4 1933 24
+1935 mul 4 374 1934
+1936 add 4 157 1935
+1937 add 4 385 1936
+1938 write 5 1932 1937 1892
+1939 read 3 1938 162
+1940 uext 4 1939 24
+1941 mul 4 374 1940
+1942 add 4 157 1941
+1943 add 4 383 1942
+1944 write 5 1938 1943 1889
+1945 read 3 1944 162
+1946 add 3 604 1945
+1947 write 5 1944 162 1946
+1948 eq 8 50 1947
+1949 slt 8 1810 387
+1950 slt 8 217 1495
+1951 and 8 1950 1949
+1952 eq 8 1900 581
+1953 and 8 1952 1951
+1954 and 8 1953 1948
+1955 and 8 1851 1954
+1956 and 8 1853 1955
+1957 and 8 1855 1956
+1958 and 8 1957 1924
+1959 and 8 1857 1958
+1960 and 8 1859 1959
+1961 and 8 1861 1960
+1962 and 8 1863 1961
+1963 and 8 1865 1962
+1964 and 8 1867 1963
+1965 and 8 1869 1964
+1966 and 8 1871 1965
+1967 and 8 1873 1966
+1968 and 8 1875 1967
+1969 and 8 1877 1968
+1970 and 8 1879 1969
+1971 eq 8 217 34
+1972 and 8 1971 1970
+1973 and 8 1881 1972
+1974 add 4 379 217
+1975 eq 8 1974 69
+1976 and 8 1975 1973
+1977 uext 4 1895 24
+1978 add 4 158 1977
+1979 read 3 176 1978
+1980 write 5 176 1673 1898
+1981 read 3 1980 162
+1982 uext 4 1981 24
+1983 mul 4 374 1982
+1984 add 4 157 1983
+1985 add 4 387 1984
+1986 write 5 1980 1985 1895
+1987 read 3 1986 162
+1988 uext 4 1987 24
+1989 mul 4 374 1988
+1990 add 4 157 1989
+1991 add 4 385 1990
+1992 write 5 1986 1991 1979
+1993 read 3 1992 162
+1994 uext 4 1993 24
+1995 mul 4 374 1994
+1996 add 4 157 1995
+1997 add 4 383 1996
+1998 write 5 1992 1997 1889
+1999 read 3 1998 162
+2000 add 3 604 1999
+2001 write 5 1998 162 2000
+2002 eq 8 47 2001
+2003 eq 8 1810 68
+2004 eq 8 1895 67
+2005 eq 8 159 66
+2006 eq 8 1889 65
+2007 eq 8 1892 64
+2008 eq 8 1895 63
+2009 eq 8 1898 62
+2010 eq 8 1900 61
+2011 eq 8 1895 60
+2012 eq 8 158 59
+2013 eq 8 162 58
+2014 eq 8 157 57
+2015 eq 8 1246 56
+2016 eq 8 216 34
+2017 slt 8 216 1492
+2018 and 8 1484 2017
+2019 eq 8 1900 577
+2020 and 8 2019 2018
+2021 eq 8 1900 1715
+2022 not 8 2021
+2023 and 8 2022 2020
+2024 and 8 2023 2016
+2025 and 8 2024 2015
+2026 and 8 2025 2014
+2027 and 8 2026 2013
+2028 and 8 2027 2012
+2029 and 8 2028 2011
+2030 and 8 2029 2010
+2031 and 8 2030 2009
+2032 and 8 2031 2008
+2033 and 8 2032 2007
+2034 and 8 2033 2006
+2035 and 8 2034 2005
+2036 and 8 2035 2004
+2037 and 8 2036 2003
+2038 and 8 2037 2002
+2039 and 8 1669 2038
+2040 and 8 2039 1883
+2041 write 6 182 1667 1900
+2042 eq 8 48 2041
+2043 write 5 1986 1991 1892
+2044 read 3 2043 162
+2045 uext 4 2044 24
+2046 mul 4 374 2045
+2047 add 4 157 2046
+2048 add 4 383 2047
+2049 write 5 2043 2048 1889
+2050 read 3 2049 162
+2051 add 3 604 2050
+2052 write 5 2049 162 2051
+2053 eq 8 47 2052
+2054 and 8 1950 1484
+2055 and 8 2021 2054
+2056 and 8 2055 1971
+2057 and 8 2056 1881
+2058 and 8 2057 1851
+2059 and 8 2058 1853
+2060 and 8 2059 1855
+2061 and 8 2060 1857
+2062 and 8 2061 1859
+2063 and 8 2062 1861
+2064 and 8 2063 1863
+2065 and 8 2064 1865
+2066 and 8 2065 1867
+2067 and 8 2066 1869
+2068 and 8 2067 1871
+2069 and 8 2068 1873
+2070 and 8 2069 1875
+2071 and 8 2070 1877
+2072 and 8 2071 2053
+2073 and 8 2072 1879
+2074 and 8 2073 2042
+2075 and 8 2074 1975
+2076 or 8 2075 2040
+2077 not 8 1952
+2078 and 8 2077 2076
+2079 and 8 1663 2078
+2080 and 8 1662 2079
+2081 or 8 2080 1976
+2082 eq 8 1898 382
+2083 and 8 2082 2081
+2084 and 8 1836 2083
+2085 and 8 1526 2084
+2086 and 8 1537 2085
+2087 and 8 2086 1902
+2088 and 8 2087 1901
+2089 and 8 2088 1899
+2090 and 8 2089 1896
+2091 and 8 2090 1893
+2092 and 8 2091 1890
+2093 and 8 1539 2092
+2094 and 8 1541 2093
+2095 and 8 1543 2094
+2096 and 8 1545 2095
+2097 and 8 2096 1885
+2098 and 8 1552 2097
+2099 and 8 1554 2098
+2100 and 8 1556 2099
+2101 and 8 1558 2100
+2102 and 8 1560 2101
+2103 and 8 1562 2102
+2104 and 8 1564 2103
+2105 and 8 1566 2104
+2106 and 8 1568 2105
+2107 and 8 1570 2106
+2108 and 8 1572 2107
+2109 or 8 2108 1884
+2110 eq 8 150 69
+2111 eq 8 149 56
+2112 eq 8 142 54
+2113 eq 8 141 68
+2114 eq 8 140 53
+2115 eq 8 138 67
+2116 eq 8 137 66
+2117 eq 8 136 65
+2118 eq 8 134 64
+2119 eq 8 133 63
+2120 eq 8 132 62
+2121 eq 8 131 61
+2122 eq 8 130 31
+2123 eq 8 129 46
+2124 eq 8 127 30
+2125 eq 8 125 45
+2126 eq 8 124 44
+2127 eq 8 123 43
+2128 eq 8 122 42
+2129 eq 8 121 41
+2130 eq 8 120 60
+2131 eq 8 119 40
+2132 eq 8 117 39
+2133 eq 8 115 51
+2134 eq 8 114 59
+2135 eq 8 113 52
+2136 eq 8 112 58
+2137 eq 8 110 57
+2138 eq 8 109 50
+2139 eq 8 106 38
+2140 eq 8 104 36
+2141 eq 8 103 35
+2142 eq 8 102 33
+2143 eq 8 89 49
+2144 eq 8 88 37
+2145 and 8 2144 2143
+2146 and 8 248 2145
+2147 and 8 247 2146
+2148 and 8 246 2147
+2149 and 8 245 2148
+2150 and 8 244 2149
+2151 and 8 243 2150
+2152 and 8 258 2151
+2153 and 8 260 2152
+2154 and 8 262 2153
+2155 and 8 264 2154
+2156 and 8 266 2155
+2157 and 8 268 2156
+2158 and 8 2157 2142
+2159 and 8 2158 2141
+2160 and 8 2159 2140
+2161 and 8 242 2160
+2162 and 8 2161 2139
+2163 and 8 241 2162
+2164 and 8 2163 2138
+2165 and 8 239 2164
+2166 and 8 2165 2137
+2167 and 8 284 2166
+2168 and 8 2167 2136
+2169 and 8 2168 2135
+2170 and 8 2169 2134
+2171 and 8 2170 2133
+2172 and 8 2171 2132
+2173 and 8 404 2172
+2174 and 8 2173 2131
+2175 and 8 2174 2130
+2176 and 8 408 2175
+2177 and 8 2176 2129
+2178 and 8 2177 2128
+2179 and 8 2178 2127
+2180 and 8 2179 2126
+2181 and 8 2180 2125
+2182 and 8 2181 2124
+2183 and 8 314 2182
+2184 and 8 2183 2123
+2185 and 8 318 2184
+2186 and 8 2185 2122
+2187 and 8 2186 2121
+2188 and 8 2187 2120
+2189 and 8 2188 2119
+2190 and 8 2189 2118
+2191 eq 8 135 32
+2192 and 8 2191 2190
+2193 and 8 2192 2117
+2194 and 8 2193 2116
+2195 and 8 2194 2115
+2196 and 8 338 2195
+2197 and 8 2196 2114
+2198 and 8 2197 2113
+2199 and 8 2198 2112
+2200 eq 8 143 55
+2201 and 8 2200 2199
+2202 and 8 348 2201
+2203 and 8 350 2202
+2204 and 8 352 2203
+2205 and 8 354 2204
+2206 and 8 356 2205
+2207 and 8 2206 2111
+2208 and 8 2207 2110
+2209 and 8 2208 2109
+2210 not 8 1498
+2211 and 8 2210 2209
+2212 and 8 2211 1501
+2213 and 8 1413 1389
+2214 eq 8 142 236
+2215 eq 8 141 1810
+2216 add 4 1148 1903
+2217 srem 4 2216 387
+2218 slice 3 2217 7 0
+2219 eq 8 140 2218
+2220 eq 8 138 1895
+2221 eq 8 159 137
+2222 eq 8 136 1889
+2223 eq 8 134 1892
+2224 eq 8 133 1895
+2225 eq 8 132 1898
+2226 eq 8 131 1900
+2227 eq 8 120 1895
+2228 eq 8 158 114
+2229 eq 8 162 112
+2230 eq 8 157 110
+2231 and 8 281 2230
+2232 and 8 284 2231
+2233 and 8 2232 2229
+2234 and 8 288 2233
+2235 and 8 2234 2228
+2236 and 8 292 2235
+2237 and 8 294 2236
+2238 and 8 404 2237
+2239 and 8 297 2238
+2240 and 8 2239 2227
+2241 and 8 408 2240
+2242 and 8 302 2241
+2243 and 8 304 2242
+2244 and 8 306 2243
+2245 and 8 308 2244
+2246 and 8 310 2245
+2247 and 8 312 2246
+2248 and 8 314 2247
+2249 and 8 316 2248
+2250 and 8 318 2249
+2251 and 8 320 2250
+2252 and 8 2251 2226
+2253 and 8 2252 2225
+2254 and 8 2253 2224
+2255 and 8 2254 2223
+2256 and 8 330 2255
+2257 and 8 2256 2222
+2258 and 8 2257 2221
+2259 and 8 2258 2220
+2260 and 8 338 2259
+2261 and 8 2260 2219
+2262 and 8 2261 2215
+2263 and 8 2262 2214
+2264 and 8 2263 2200
+2265 and 8 348 2264
+2266 and 8 350 2265
+2267 and 8 352 2266
+2268 and 8 354 2267
+2269 and 8 356 2268
+2270 and 8 358 2269
+2271 and 8 360 2270
+2272 not 8 1484
+2273 and 8 2272 2271
+2274 and 8 2017 2273
+2275 and 8 2019 2274
+2276 and 8 2022 2275
+2277 and 8 2077 2276
+2278 and 8 2082 2277
+2279 and 8 1836 2278
+2280 and 8 2210 2279
+2281 and 8 2280 2213
+2282 and 8 1413 1206
+2283 eq 8 130 236
+2284 eq 8 129 1527
+2285 add 4 1148 1582
+2286 srem 4 2285 387
+2287 slice 3 2286 7 0
+2288 eq 8 127 2287
+2289 eq 8 125 1591
+2290 eq 8 160 124
+2291 eq 8 123 1581
+2292 eq 8 122 1588
+2293 eq 8 121 1591
+2294 eq 8 119 1594
+2295 eq 8 117 1579
+2296 eq 8 106 1591
+2297 eq 8 158 104
+2298 eq 8 162 103
+2299 eq 8 157 102
+2300 and 8 269 2299
+2301 and 8 2300 2298
+2302 and 8 2301 2297
+2303 and 8 242 2302
+2304 and 8 2303 2296
+2305 and 8 241 2304
+2306 and 8 240 2305
+2307 and 8 239 2306
+2308 and 8 282 2307
+2309 and 8 284 2308
+2310 and 8 286 2309
+2311 and 8 288 2310
+2312 and 8 290 2311
+2313 and 8 292 2312
+2314 and 8 2313 2295
+2315 and 8 404 2314
+2316 and 8 2315 2294
+2317 and 8 299 2316
+2318 and 8 408 2317
+2319 and 8 2318 2293
+2320 and 8 2319 2292
+2321 and 8 2320 2291
+2322 and 8 2321 2290
+2323 and 8 2322 2289
+2324 and 8 2323 2288
+2325 and 8 314 2324
+2326 and 8 2325 2284
+2327 and 8 318 2326
+2328 and 8 2327 2283
+2329 and 8 322 2328
+2330 and 8 324 2329
+2331 and 8 326 2330
+2332 and 8 328 2331
+2333 and 8 2332 2191
+2334 and 8 332 2333
+2335 and 8 334 2334
+2336 and 8 336 2335
+2337 and 8 338 2336
+2338 and 8 340 2337
+2339 and 8 342 2338
+2340 and 8 344 2339
+2341 and 8 346 2340
+2342 and 8 348 2341
+2343 and 8 350 2342
+2344 and 8 352 2343
+2345 and 8 354 2344
+2346 and 8 356 2345
+2347 and 8 358 2346
+2348 and 8 360 2347
+2349 not 8 1480
+2350 and 8 2349 2348
+2351 and 8 1711 2350
+2352 and 8 1713 2351
+2353 and 8 1717 2352
+2354 and 8 1772 2353
+2355 and 8 1778 2354
+2356 and 8 1533 2355
+2357 and 8 1785 2356
+2358 and 8 1837 2357
+2359 and 8 2210 2358
+2360 and 8 2359 2282
+2361 or 8 2360 2281
+2362 or 8 2361 2212
+2363 or 8 2362 1500
+2364 and 8 220 876
+2365 and 8 229 2364
+2366 and 8 367 233
+2367 and 8 2366 2365
+2368 mul 4 374 167
+2369 add 4 163 2368
+2370 add 4 385 2369
+2371 read 3 176 2370
+2372 eq 8 2371 382
+2373 not 8 2372
+2374 eq 8 167 1148
+2375 not 8 2374
+2376 eq 8 166 1148
+2377 not 8 2376
+2378 eq 8 164 1148
+2379 not 8 2378
+2380 eq 8 165 1148
+2381 not 8 2380
+2382 slt 8 166 167
+2383 slt 8 164 165
+2384 and 8 2383 2382
+2385 and 8 2384 2381
+2386 and 8 2385 2379
+2387 and 8 2386 2377
+2388 and 8 2387 2375
+2389 and 8 2388 2373
+2390 not 8 2388
+2391 or 8 2390 2389
+2392 and 8 356 789
+2393 and 8 2392 358
+2394 and 8 2393 360
+2395 and 8 2394 2391
+2396 slt 8 168 362
+2397 not 8 2396
+2398 and 8 2397 2395
+2399 and 8 2398 2367
+2400 and 8 367 448
+2401 and 8 2365 2400
+2402 and 8 250 2372
+2403 and 8 249 2402
+2404 and 8 248 2403
+2405 and 8 247 2404
+2406 and 8 246 2405
+2407 and 8 245 2406
+2408 and 8 244 2407
+2409 and 8 243 2408
+2410 and 8 258 2409
+2411 and 8 260 2410
+2412 and 8 262 2411
+2413 and 8 264 2412
+2414 and 8 266 2413
+2415 and 8 268 2414
+2416 and 8 270 2415
+2417 and 8 272 2416
+2418 and 8 274 2417
+2419 and 8 242 2418
+2420 and 8 277 2419
+2421 and 8 241 2420
+2422 and 8 240 2421
+2423 and 8 239 2422
+2424 and 8 282 2423
+2425 and 8 284 2424
+2426 and 8 286 2425
+2427 and 8 288 2426
+2428 and 8 290 2427
+2429 and 8 292 2428
+2430 and 8 294 2429
+2431 and 8 404 2430
+2432 and 8 297 2431
+2433 and 8 299 2432
+2434 and 8 408 2433
+2435 and 8 302 2434
+2436 and 8 304 2435
+2437 and 8 306 2436
+2438 and 8 308 2437
+2439 and 8 310 2438
+2440 and 8 312 2439
+2441 and 8 314 2440
+2442 and 8 316 2441
+2443 and 8 318 2442
+2444 and 8 320 2443
+2445 and 8 322 2444
+2446 and 8 324 2445
+2447 and 8 326 2446
+2448 and 8 328 2447
+2449 and 8 330 2448
+2450 and 8 332 2449
+2451 and 8 334 2450
+2452 and 8 336 2451
+2453 and 8 338 2452
+2454 and 8 340 2453
+2455 and 8 342 2454
+2456 and 8 344 2455
+2457 and 8 346 2456
+2458 and 8 348 2457
+2459 and 8 350 2458
+2460 and 8 352 2459
+2461 and 8 354 2460
+2462 and 8 356 2461
+2463 and 8 358 2462
+2464 and 8 360 2463
+2465 and 8 2388 2464
+2466 and 8 2397 2465
+2467 and 8 2466 2401
+2468 and 8 2365 1415
+2469 add 4 379 168
+2470 eq 8 101 2469
+2471 eq 8 100 29
+2472 eq 8 99 28
+2473 eq 8 98 26
+2474 eq 8 97 27
+2475 and 8 259 2474
+2476 and 8 2475 2473
+2477 and 8 2476 2472
+2478 and 8 2477 2471
+2479 and 8 2478 2470
+2480 and 8 270 2479
+2481 and 8 272 2480
+2482 and 8 274 2481
+2483 and 8 242 2482
+2484 and 8 277 2483
+2485 and 8 241 2484
+2486 and 8 240 2485
+2487 and 8 239 2486
+2488 and 8 282 2487
+2489 and 8 284 2488
+2490 and 8 286 2489
+2491 and 8 288 2490
+2492 and 8 290 2491
+2493 and 8 292 2492
+2494 and 8 294 2493
+2495 and 8 404 2494
+2496 and 8 297 2495
+2497 and 8 299 2496
+2498 and 8 408 2497
+2499 and 8 302 2498
+2500 and 8 304 2499
+2501 and 8 306 2500
+2502 and 8 308 2501
+2503 and 8 310 2502
+2504 and 8 312 2503
+2505 and 8 314 2504
+2506 and 8 316 2505
+2507 and 8 318 2506
+2508 and 8 320 2507
+2509 and 8 322 2508
+2510 and 8 324 2509
+2511 and 8 326 2510
+2512 and 8 328 2511
+2513 and 8 330 2512
+2514 and 8 332 2513
+2515 and 8 334 2514
+2516 and 8 336 2515
+2517 and 8 338 2516
+2518 and 8 340 2517
+2519 and 8 342 2518
+2520 and 8 344 2519
+2521 and 8 346 2520
+2522 and 8 348 2521
+2523 and 8 350 2522
+2524 and 8 352 2523
+2525 and 8 354 2524
+2526 and 8 356 2525
+2527 and 8 358 2526
+2528 and 8 360 2527
+2529 mul 4 374 168
+2530 add 4 163 2529
+2531 add 4 383 2530
+2532 read 3 176 2531
+2533 uext 4 2532 24
+2534 eq 8 2533 385
+2535 read 2 182 2530
+2536 eq 8 2535 577
+2537 add 4 387 2530
+2538 read 3 176 2537
+2539 eq 8 2538 382
+2540 and 8 2539 2536
+2541 and 8 2540 2534
+2542 add 4 379 2530
+2543 read 3 176 2542
+2544 uext 4 2543 24
+2545 eq 8 2544 379
+2546 and 8 2545 2541
+2547 and 8 2546 2374
+2548 not 8 2547
+2549 eq 8 2533 387
+2550 uext 4 2538 24
+2551 eq 8 2550 379
+2552 eq 8 2535 581
+2553 and 8 2552 2551
+2554 and 8 2553 2549
+2555 add 4 385 2530
+2556 read 3 176 2555
+2557 uext 4 2556 24
+2558 eq 8 2557 379
+2559 and 8 2558 2554
+2560 and 8 2559 2545
+2561 and 8 2560 2376
+2562 not 8 2561
+2563 and 8 2562 2548
+2564 eq 8 2533 379
+2565 and 8 2536 2551
+2566 and 8 2565 2564
+2567 eq 8 2543 382
+2568 and 8 2567 2566
+2569 and 8 2568 2380
+2570 not 8 2569
+2571 and 8 2570 2563
+2572 eq 8 2532 382
+2573 and 8 2552 2539
+2574 and 8 2573 2572
+2575 and 8 2574 2558
+2576 and 8 2575 2567
+2577 and 8 2576 2378
+2578 not 8 2577
+2579 and 8 2578 2571
+2580 eq 8 164 27
+2581 and 8 2580 2579
+2582 eq 8 165 26
+2583 and 8 2582 2581
+2584 eq 8 166 28
+2585 and 8 2584 2583
+2586 eq 8 167 29
+2587 and 8 2586 2585
+2588 eq 8 168 29
+2589 and 8 2562 2547
+2590 and 8 2570 2589
+2591 and 8 2578 2590
+2592 and 8 2591 2588
+2593 and 8 2580 2592
+2594 and 8 2582 2593
+2595 and 8 2584 2594
+2596 eq 8 168 28
+2597 and 8 2570 2561
+2598 and 8 2578 2597
+2599 and 8 2598 2596
+2600 and 8 2580 2599
+2601 and 8 2582 2600
+2602 eq 8 168 26
+2603 and 8 2578 2569
+2604 and 8 2603 2602
+2605 and 8 2604 2580
+2606 eq 8 168 27
+2607 and 8 2577 2582
+2608 and 8 2607 2606
+2609 or 8 2608 2605
+2610 and 8 2609 2584
+2611 or 8 2610 2601
+2612 and 8 2611 2586
+2613 or 8 2612 2595
+2614 or 8 2613 2587
+2615 and 8 2614 2528
+2616 and 8 2396 2615
+2617 and 8 2616 2468
+2618 or 8 2617 2467
+2619 or 8 2618 2399
+2620 and 8 229 570
+2621 and 8 2620 2366
+2622 and 8 2394 2621
+2623 and 8 877 229
+2624 and 8 2623 371
+2625 eq 8 150 23
+2626 eq 8 149 22
+2627 eq 8 108 236
+2628 constd 4 176
+2629 constd 4 55
+2630 constd 4 54
+2631 constd 4 53
+2632 constd 4 52
+2633 constd 4 51
+2634 constd 4 50
+2635 constd 4 49
+2636 constd 4 48
+2637 constd 4 47
+2638 constd 4 46
+2639 write 5 176 2638 382
+2640 write 5 2639 2637 382
+2641 write 5 2640 2636 382
+2642 write 5 2641 2635 382
+2643 write 5 2642 2634 382
+2644 write 5 2643 2633 382
+2645 write 5 2644 2632 382
+2646 write 5 2645 2631 382
+2647 write 5 2646 2630 382
+2648 write 5 2647 2629 382
+2649 write 5 2648 2628 382
+2650 eq 8 109 2649
+2651 eq 8 107 379
+2652 constd 4 267
+2653 eq 8 105 2652
+2654 eq 8 95 2628
+2655 constd 4 80
+2656 eq 8 94 2655
+2657 constd 4 68
+2658 eq 8 93 2657
+2659 constd 4 56
+2660 eq 8 92 2659
+2661 eq 8 91 2638
+2662 eq 8 90 379
+2663 eq 8 89 25
+2664 eq 8 88 24
+2665 and 8 2664 2663
+2666 and 8 2665 2662
+2667 and 8 2666 2661
+2668 and 8 2667 2660
+2669 and 8 2668 2658
+2670 and 8 2669 2656
+2671 and 8 2670 2654
+2672 and 8 2671 258
+2673 and 8 2672 260
+2674 and 8 2673 262
+2675 and 8 2674 264
+2676 and 8 2675 266
+2677 and 8 2676 268
+2678 and 8 2677 270
+2679 and 8 2678 272
+2680 and 8 2679 274
+2681 and 8 2680 2653
+2682 and 8 2681 277
+2683 and 8 2682 2651
+2684 and 8 2683 2650
+2685 and 8 2684 2627
+2686 and 8 2685 282
+2687 and 8 2686 284
+2688 and 8 2687 286
+2689 and 8 2688 288
+2690 and 8 2689 290
+2691 and 8 2690 292
+2692 and 8 2691 294
+2693 and 8 2692 404
+2694 and 8 2693 297
+2695 and 8 2694 299
+2696 and 8 2695 408
+2697 and 8 2696 302
+2698 and 8 2697 304
+2699 and 8 2698 306
+2700 and 8 2699 308
+2701 and 8 2700 310
+2702 and 8 2701 312
+2703 and 8 2702 314
+2704 and 8 2703 316
+2705 and 8 2704 318
+2706 and 8 2705 320
+2707 and 8 2706 322
+2708 and 8 2707 324
+2709 and 8 2708 326
+2710 and 8 2709 328
+2711 and 8 2710 330
+2712 and 8 2711 332
+2713 and 8 2712 334
+2714 and 8 2713 336
+2715 and 8 2714 338
+2716 and 8 2715 340
+2717 and 8 2716 342
+2718 and 8 2717 344
+2719 and 8 2718 346
+2720 and 8 2719 348
+2721 and 8 2720 350
+2722 and 8 2721 352
+2723 and 8 2722 354
+2724 and 8 2723 356
+2725 and 8 2724 2626
+2726 and 8 2725 2625
+2727 and 8 2726 2624
+2728 or 8 2727 2622
+2729 or 8 2728 2619
+2730 or 8 2729 2363
+2731 or 8 2730 1411
+2732 or 8 2731 1242
+2733 or 8 2732 1039
+2734 or 8 2733 875
+2735 or 8 2734 752
+2736 or 8 2735 567
+2737 or 8 2736 442
+2738 ult 8 1529 21
+2739 not 8 2738
+2740 ult 8 1529 20
+2741 not 8 2740
+2742 ult 8 1529 12
+2743 not 8 2742
+2744 ult 8 1529 11
+2745 not 8 2744
+2746 and 8 2745 2743
+2747 and 8 2743 2746
+2748 and 8 2747 2741
+2749 and 8 2741 2748
+2750 and 8 2749 2739
+2751 and 8 2739 2750
+2752 and 8 2745 2751
+2753 and 8 2743 2752
+2754 and 8 2753 2737
+2755 and 8 2754 223
+2756 or 8 2755 224
+2757 and 8 367 755
+2758 or 8 222 2757
+2759 and 8 2758 2756
+2760 and 8 2620 223
+2761 next 4 155 88
+2762 next 4 156 89
+2763 next 4 157 90
+2764 next 4 158 91
+2765 next 4 159 92
+2766 next 4 160 93
+2767 next 4 161 94
+2768 next 4 162 95
+2769 next 4 163 96
+2770 next 4 164 97
+2771 next 4 165 98
+2772 next 4 166 99
+2773 next 4 167 100
+2774 next 4 168 101
+2775 next 4 169 102
+2776 next 4 170 103
+2777 next 4 171 104
+2778 next 4 172 105
+2779 next 3 173 106
+2780 next 4 174 107
+2781 next 4 175 108
+2782 next 5 176 109
+2783 next 4 177 110
+2784 next 7 178 111
+2785 next 4 179 112
+2786 next 7 180 113
+2787 next 4 181 114
+2788 next 6 182 115
+2789 next 4 183 116
+2790 next 2 184 117
+2791 next 4 185 118
+2792 next 3 186 119
+2793 next 3 187 120
+2794 next 3 188 121
+2795 next 3 189 122
+2796 next 3 190 123
+2797 next 4 191 124
+2798 next 3 192 125
+2799 next 4 193 126
+2800 next 3 194 127
+2801 next 4 195 128
+2802 next 4 196 129
+2803 next 4 197 130
+2804 next 2 198 131
+2805 next 3 199 132
+2806 next 3 200 133
+2807 next 3 201 134
+2808 next 3 202 135
+2809 next 3 203 136
+2810 next 4 204 137
+2811 next 3 205 138
+2812 next 4 206 139
+2813 next 3 207 140
+2814 next 4 208 141
+2815 next 4 209 142
+2816 next 3 210 143
+2817 next 4 211 144
+2818 next 4 212 145
+2819 next 4 213 146
+2820 next 4 214 147
+2821 next 4 215 148
+2822 next 4 216 149
+2823 next 4 217 150
+2824 next 8 218 151
+2825 next 8 219 152
+2826 next 8 220 153
+2827 next 8 221 154
+2828 init 8 222 9
+2829 next 8 222 10
+2830 init 8 223 9
+2831 next 8 223 2759
+2832 bad 2760
